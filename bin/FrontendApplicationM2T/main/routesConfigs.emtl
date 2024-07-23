@@ -82,7 +82,7 @@
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           </each>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="    {&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="    {&#xA;      path: '*',&#xA;&#x9;  redirect: '/'&#xA;    },&#xA;    {&#xA;"/>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="  "/>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
@@ -237,12 +237,12 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/main">
       <details key="start" value="94"/>
-      <details key="end" value="775"/>
+      <details key="end" value="822"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/main/%">
       <details key="start" value="154"/>
-      <details key="end" value="763"/>
+      <details key="end" value="810"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/main/%/%">
@@ -402,23 +402,23 @@
     </eAnnotations>
     <eAnnotations source="positions.33" references="/0/main/%/%.6">
       <details key="start" value="630"/>
-      <details key="end" value="636"/>
+      <details key="end" value="683"/>
       <details key="line" value="24"/>
     </eAnnotations>
     <eAnnotations source="positions.34" references="/0/main/%/%.7">
-      <details key="start" value="720"/>
-      <details key="end" value="722"/>
-      <details key="line" value="28"/>
+      <details key="start" value="767"/>
+      <details key="end" value="769"/>
+      <details key="line" value="32"/>
     </eAnnotations>
     <eAnnotations source="positions.35" references="/0/main/%/%.8">
-      <details key="start" value="723"/>
-      <details key="end" value="726"/>
+      <details key="start" value="770"/>
+      <details key="end" value="773"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.36" references="/0/main/%/%.9">
-      <details key="start" value="728"/>
-      <details key="end" value="756"/>
-      <details key="line" value="29"/>
+      <details key="start" value="775"/>
+      <details key="end" value="803"/>
+      <details key="line" value="33"/>
     </eAnnotations>
     <eAnnotations source="positions.37" references="/0/main/%/%.10">
       <details key="start" value="161"/>

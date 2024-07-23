@@ -22,6 +22,10 @@ const router = createRouter({
     },
 	[/for]
     {
+      path: '*',
+	  redirect: '/'
+    },
+    {
 [comment]      path: '/',
 	  redirect: {name : '[app.pages.name/]'}
     }[/comment]
