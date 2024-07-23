@@ -1,5 +1,5 @@
 [comment encoding = UTF-8 /]
-[module generateRoutes('http://www.FrontendApplicationMM.com')]
+[module routesConfigs('http://www.FrontendApplicationMM.com')]
 
 
 [template public main(app : App_Frontend)]
@@ -22,10 +22,9 @@ const router = createRouter({
     },
 	[/for]
     {
-      path: '/',
-      name: 'home',
-      component: HomeView
-    }
+[comment]      path: '/',
+	  redirect: {name : '[app.pages.name/]'}
+    }[/comment]
   [']'/]
 })
 

@@ -7,7 +7,7 @@
 [template public main(app : App_Frontend)]
 	
 	[comment @main /]
-	[file (element.name.concat('.java'), false, 'UTF-8')]
+	[file (app.name.concat('.java'), false, 'UTF-8')]
 		
 	[/file]
 	
