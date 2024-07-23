@@ -44,4 +44,35 @@
 }
 
 [/file]
+
+[file ('jsconfig.json', false, 'UTF-8')]
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ['['/]"./src/*"[']'/]
+    }
+  },
+  "exclude": ['['/]"node_modules", "dist"[']'/]
+}
+[/file]
+
+[file ('vite.config.js', false, 'UTF-8')]
+import { fileURLToPath, URL } from 'node:url'
+
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: ['['/]
+    vue(),
+  [']'/],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  }
+})
+
+[/file]
 [/template]

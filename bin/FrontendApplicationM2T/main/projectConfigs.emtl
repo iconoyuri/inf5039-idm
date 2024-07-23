@@ -40,6 +40,50 @@
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </charset>
       </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="{&#xA;  &quot;compilerOptions&quot;: {&#xA;    &quot;paths&quot;: {&#xA;      &quot;@/*&quot;: "/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;./src/*&quot;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;    }&#xA;  },&#xA;  &quot;exclude&quot;: "/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;node_modules&quot;, &quot;dist&quot;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;}&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="jsconfig.json">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="import { fileURLToPath, URL } from 'node:url'&#xA;&#xA;import { defineConfig } from 'vite'&#xA;import vue from '@vitejs/plugin-vue'&#xA;&#xA;// https://vitejs.dev/config/&#xA;export default defineConfig({&#xA;  plugins: "/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;    vue(),&#xA;  "/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;  resolve: {&#xA;    alias: {&#xA;      '@': fileURLToPath(new URL('./src', import.meta.url))&#xA;    }&#xA;  }&#xA;})&#xA;&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="vite.config.js">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
       <parameter name="frontendApp">
         <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
       </parameter>
@@ -133,12 +177,42 @@
     <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateConfigFiles">
       <details key="start" value="96"/>
-      <details key="end" value="982"/>
+      <details key="end" value="1539"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateConfigFiles/%">
@@ -216,7 +290,117 @@
       <details key="end" value="607"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.16" references="/0/generateConfigFiles/frontendApp">
+    <eAnnotations source="positions.16" references="/0/generateConfigFiles/%.3">
+      <details key="start" value="971"/>
+      <details key="end" value="972"/>
+      <details key="line" value="47"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generateConfigFiles/%.4">
+      <details key="start" value="972"/>
+      <details key="end" value="1156"/>
+      <details key="line" value="48"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateConfigFiles/%.4/%">
+      <details key="start" value="1013"/>
+      <details key="end" value="1066"/>
+      <details key="line" value="49"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generateConfigFiles/%.4/%.1">
+      <details key="start" value="1067"/>
+      <details key="end" value="1070"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generateConfigFiles/%.4/%.2">
+      <details key="start" value="1072"/>
+      <details key="end" value="1081"/>
+      <details key="line" value="52"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generateConfigFiles/%.4/%.3">
+      <details key="start" value="1082"/>
+      <details key="end" value="1085"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generateConfigFiles/%.4/%.4">
+      <details key="start" value="1087"/>
+      <details key="end" value="1112"/>
+      <details key="line" value="53"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/generateConfigFiles/%.4/%.5">
+      <details key="start" value="1113"/>
+      <details key="end" value="1116"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/generateConfigFiles/%.4/%.6">
+      <details key="start" value="1118"/>
+      <details key="end" value="1140"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/generateConfigFiles/%.4/%.7">
+      <details key="start" value="1141"/>
+      <details key="end" value="1144"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/generateConfigFiles/%.4/%.8">
+      <details key="start" value="1146"/>
+      <details key="end" value="1149"/>
+      <details key="line" value="56"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/generateConfigFiles/%.4/%.9">
+      <details key="start" value="979"/>
+      <details key="end" value="994"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/generateConfigFiles/%.4/%.10">
+      <details key="start" value="1003"/>
+      <details key="end" value="1010"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/generateConfigFiles/%.5">
+      <details key="start" value="1157"/>
+      <details key="end" value="1158"/>
+      <details key="line" value="58"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/generateConfigFiles/%.6">
+      <details key="start" value="1158"/>
+      <details key="end" value="1527"/>
+      <details key="line" value="59"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/generateConfigFiles/%.6/%">
+      <details key="start" value="1200"/>
+      <details key="end" value="1392"/>
+      <details key="line" value="60"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/generateConfigFiles/%.6/%.1">
+      <details key="start" value="1393"/>
+      <details key="end" value="1396"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/generateConfigFiles/%.6/%.2">
+      <details key="start" value="1398"/>
+      <details key="end" value="1412"/>
+      <details key="line" value="68"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/generateConfigFiles/%.6/%.3">
+      <details key="start" value="1413"/>
+      <details key="end" value="1416"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/generateConfigFiles/%.6/%.4">
+      <details key="start" value="1418"/>
+      <details key="end" value="1520"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/generateConfigFiles/%.6/%.5">
+      <details key="start" value="1165"/>
+      <details key="end" value="1181"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/generateConfigFiles/%.6/%.6">
+      <details key="start" value="1190"/>
+      <details key="end" value="1197"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/generateConfigFiles/frontendApp">
       <details key="start" value="133"/>
       <details key="end" value="159"/>
       <details key="line" value="6"/>
