@@ -1,0 +1,31 @@
+import FrontendGenerator2 : 'FrontendGenerator2.ecore#/' package FrontendGenerator2 
+
+context Page 
+	inv NotEmptyPage : 
+		self.containers->notEmpty() xor self.components->notEmpty()
+
+context Container 
+	inv containerNotEmpty : 	
+		not self.components->isEmpty() or
+		not self.containers->isEmpty() or
+		not self.style->isEmpty() 
+		
+context Dynamic 
+	inv UniqueeventName : 	
+		self.events->isUnique(name)
+		 
+	inv submitEventValidityConstraint : 	
+		self.events->exists(e | e.type = FrontendGenerator2::EventType::submit) implies
+		self.oclIsTypeOf(FrontendGenerator2::Form) or
+		self.oclIsTypeOf(FrontendGenerator2::Button)
+		 
+	inv UniqueValidEventType : 	
+		self.oclIsTypeOf(FrontendGenerator2::InputField) implies
+		self.events->forAll(e | e.type = FrontendGenerator2::EventType::change) 
+		
+context Style 
+	inv UniqueClasName : 	
+		FrontendGenerator2::Style.allInstances()
+		->isUnique(className) and
+		FrontendGenerator2::Style.allInstances()
+		->isUnique(IdName) endpackage

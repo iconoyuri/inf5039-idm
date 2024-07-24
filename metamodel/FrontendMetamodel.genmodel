@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/FrontendApplicationM2T/src" modelPluginID="FrontendApplicationM2T"
+    modelName="FrontendMetamodel" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="17.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>FrontendMetamodel.ecore</foreignModel>
+  <genPackages prefix="FrontendApplicationMM" disposableProviderFactory="true" ecorePackage="FrontendMetamodel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FrontendMetamodel.ecore#//Alignment">
+      <genEnumLiterals ecoreEnumLiteral="FrontendMetamodel.ecore#//Alignment/vertical"/>
+      <genEnumLiterals ecoreEnumLiteral="FrontendMetamodel.ecore#//Alignment/horizontal"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FrontendMetamodel.ecore#//InputType">
+      <genEnumLiterals ecoreEnumLiteral="FrontendMetamodel.ecore#//InputType/text"/>
+      <genEnumLiterals ecoreEnumLiteral="FrontendMetamodel.ecore#//InputType/number"/>
+      <genEnumLiterals ecoreEnumLiteral="FrontendMetamodel.ecore#//InputType/email"/>
+      <genEnumLiterals ecoreEnumLiteral="FrontendMetamodel.ecore#//InputType/radio"/>
+      <genEnumLiterals ecoreEnumLiteral="FrontendMetamodel.ecore#//InputType/password"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FrontendMetamodel.ecore#//EventType">
+      <genEnumLiterals ecoreEnumLiteral="FrontendMetamodel.ecore#//EventType/click"/>
+      <genEnumLiterals ecoreEnumLiteral="FrontendMetamodel.ecore#//EventType/change"/>
+      <genEnumLiterals ecoreEnumLiteral="FrontendMetamodel.ecore#//EventType/input"/>
+      <genEnumLiterals ecoreEnumLiteral="FrontendMetamodel.ecore#//EventType/submit"/>
+      <genEnumLiterals ecoreEnumLiteral="FrontendMetamodel.ecore#//EventType/ckecked"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="FrontendMetamodel.ecore#//Component">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Component/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrontendMetamodel.ecore#//Component/components"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrontendMetamodel.ecore#//Component/containers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Component/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Component/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Component/heigth"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrontendMetamodel.ecore#//Component/style"/>
+    </genClasses>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//Page">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrontendMetamodel.ecore#//Page/containers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrontendMetamodel.ecore#//Page/components"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Page/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrontendMetamodel.ecore#//Page/styles"/>
+    </genClasses>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//Button">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Button/text"/>
+    </genClasses>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//Text">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Text/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Text/fontSize"/>
+    </genClasses>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//InputField">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//InputField/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//InputField/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//InputField/indication"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//InputField/type"/>
+    </genClasses>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//Container">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrontendMetamodel.ecore#//Container/components"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Container/alignment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Container/spacing"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrontendMetamodel.ecore#//Container/containers"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FrontendMetamodel.ecore#//Container/style"/>
+    </genClasses>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//Event">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Event/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Event/name"/>
+    </genClasses>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//Image">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Image/source"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="FrontendMetamodel.ecore#//Dynamic">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrontendMetamodel.ecore#//Dynamic/events"/>
+    </genClasses>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//TextList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrontendMetamodel.ecore#//TextList/items"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//TextList/value"/>
+    </genClasses>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//Form"/>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//App_Frontend">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//App_Frontend/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrontendMetamodel.ecore#//App_Frontend/pages"/>
+    </genClasses>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//TextField">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//TextField/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//TextField/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//TextField/maxLines"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//TextField/indication"/>
+    </genClasses>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//Link">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Link/href"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Link/text"/>
+    </genClasses>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//Style">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Style/className"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Style/IdName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FrontendMetamodel.ecore#//Style/properties"/>
+    </genClasses>
+    <genClasses ecoreClass="FrontendMetamodel.ecore#//Property">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Property/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FrontendMetamodel.ecore#//Property/value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="projectConfigs" nsURI="FrontendApplicationM2T::main::projectConfigs" startHeaderPosition="30" endHeaderPosition="176">
+  <mtl:Module name="projectConfigs" nsURI="FrontendApplicationM2T::main::projectConfigs" startHeaderPosition="30" endHeaderPosition="246">
     <input>
-      <takesTypesFrom href="http://www.FrontendApplicationMM.com#/"/>
+      <takesTypesFrom href="http://www.frontendapplicationmm.com#/"/>
     </input>
     <ownedModuleElement xsi:type="mtl:Template" name="generateConfigFiles" visibility="Public" main="true">
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
@@ -10,9 +10,9 @@
         <body xsi:type="ocl.ecore:PropertyCallExp">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="ocl.ecore:VariableExp" name="frontendApp" referredVariable="/0/generateConfigFiles/frontendApp">
-            <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+            <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
           </source>
-          <referredProperty xsi:type="ecore:EAttribute" href="http://www.FrontendApplicationMM.com#//App_Frontend/name"/>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.frontendapplicationmm.com#//App_Frontend/name"/>
         </body>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/title>&#xA;  &lt;/head>&#xA;  &lt;body>&#xA;    &lt;div id=&quot;app&quot;>&lt;/div>&#xA;    &lt;script type=&quot;module&quot; src=&quot;/src/main.js&quot;>&lt;/script>&#xA;  &lt;/body>&#xA;&lt;/html>&#xA;"/>
         <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="index.html">
@@ -28,9 +28,9 @@
         <body xsi:type="ocl.ecore:PropertyCallExp">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="ocl.ecore:VariableExp" name="frontendApp" referredVariable="/0/generateConfigFiles/frontendApp">
-            <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+            <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
           </source>
-          <referredProperty xsi:type="ecore:EAttribute" href="http://www.FrontendApplicationMM.com#//App_Frontend/name"/>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.frontendapplicationmm.com#//App_Frontend/name"/>
         </body>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;,&#xA;  &quot;version&quot;: &quot;0.0.0&quot;,&#xA;  &quot;private&quot;: true,&#xA;  &quot;type&quot;: &quot;module&quot;,&#xA;  &quot;scripts&quot;: {&#xA;    &quot;dev&quot;: &quot;vite&quot;,&#xA;    &quot;build&quot;: &quot;vite build&quot;,&#xA;    &quot;preview&quot;: &quot;vite preview&quot;&#xA;  },&#xA;  &quot;dependencies&quot;: {&#xA;    &quot;vue&quot;: &quot;^3.4.29&quot;,&#xA;    &quot;vue-router&quot;: &quot;^4.3.3&quot;&#xA;  },&#xA;  &quot;devDependencies&quot;: {&#xA;    &quot;@vitejs/plugin-vue&quot;: &quot;^5.0.5&quot;,&#xA;    &quot;vite&quot;: &quot;^5.3.1&quot;&#xA;  }&#xA;}&#xA;&#xA;"/>
         <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="package.json">
@@ -85,7 +85,7 @@
         </charset>
       </body>
       <parameter name="frontendApp">
-        <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+        <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
       </parameter>
     </ownedModuleElement>
   </mtl:Module>
@@ -116,7 +116,7 @@
         <eAnnotations source="MTL" references="/0/generateConfigFiles"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="frontendApp">
-          <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+          <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
         </eParameters>
       </eOperations>
     </eClassifiers>
@@ -140,9 +140,9 @@
         <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
       </eAnnotations>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="FrontendApplicationMM_App_Frontend_Class">
+    <eClassifiers xsi:type="ecore:EClass" name="frontendapplicationmm_App_Frontend_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
-        <references href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+        <references href="http://www.frontendapplicationmm.com#//App_Frontend"/>
       </eAnnotations>
     </eClassifiers>
   </ecore:EPackage>
@@ -150,61 +150,61 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
@@ -212,192 +212,192 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateConfigFiles">
       <details key="start" value="96"/>
-      <details key="end" value="1497"/>
+      <details key="end" value="1567"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateConfigFiles/%">
-      <details key="start" value="179"/>
-      <details key="end" value="525"/>
-      <details key="line" value="8"/>
-    </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/generateConfigFiles/%/%">
-      <details key="start" value="217"/>
-      <details key="end" value="372"/>
+      <details key="start" value="249"/>
+      <details key="end" value="595"/>
       <details key="line" value="9"/>
     </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generateConfigFiles/%/%">
+      <details key="start" value="287"/>
+      <details key="end" value="442"/>
+      <details key="line" value="10"/>
+    </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generateConfigFiles/%/%.1">
-      <details key="start" value="373"/>
-      <details key="end" value="389"/>
+      <details key="start" value="443"/>
+      <details key="end" value="459"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generateConfigFiles/%/%.1/frontendApp">
-      <details key="start" value="373"/>
-      <details key="end" value="384"/>
+      <details key="start" value="443"/>
+      <details key="end" value="454"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/generateConfigFiles/%/%.2">
-      <details key="start" value="392"/>
-      <details key="end" value="518"/>
-      <details key="line" value="14"/>
+      <details key="start" value="462"/>
+      <details key="end" value="588"/>
+      <details key="line" value="15"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/generateConfigFiles/%/%.3">
-      <details key="start" value="186"/>
-      <details key="end" value="198"/>
+      <details key="start" value="256"/>
+      <details key="end" value="268"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/generateConfigFiles/%/%.4">
-      <details key="start" value="207"/>
-      <details key="end" value="214"/>
+      <details key="start" value="277"/>
+      <details key="end" value="284"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.8" references="/0/generateConfigFiles/%.1">
-      <details key="start" value="526"/>
-      <details key="end" value="528"/>
-      <details key="line" value="22"/>
+      <details key="start" value="596"/>
+      <details key="end" value="598"/>
+      <details key="line" value="23"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/generateConfigFiles/%.2">
-      <details key="start" value="528"/>
-      <details key="end" value="928"/>
-      <details key="line" value="24"/>
-    </eAnnotations>
-    <eAnnotations source="positions.10" references="/0/generateConfigFiles/%.2/%">
-      <details key="start" value="568"/>
-      <details key="end" value="581"/>
+      <details key="start" value="598"/>
+      <details key="end" value="998"/>
       <details key="line" value="25"/>
     </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/generateConfigFiles/%.2/%">
+      <details key="start" value="638"/>
+      <details key="end" value="651"/>
+      <details key="line" value="26"/>
+    </eAnnotations>
     <eAnnotations source="positions.11" references="/0/generateConfigFiles/%.2/%.1">
-      <details key="start" value="582"/>
-      <details key="end" value="598"/>
+      <details key="start" value="652"/>
+      <details key="end" value="668"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/generateConfigFiles/%.2/%.1/frontendApp">
-      <details key="start" value="582"/>
-      <details key="end" value="593"/>
+      <details key="start" value="652"/>
+      <details key="end" value="663"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.13" references="/0/generateConfigFiles/%.2/%.2">
-      <details key="start" value="600"/>
-      <details key="end" value="921"/>
-      <details key="line" value="26"/>
+      <details key="start" value="670"/>
+      <details key="end" value="991"/>
+      <details key="line" value="27"/>
     </eAnnotations>
     <eAnnotations source="positions.14" references="/0/generateConfigFiles/%.2/%.3">
-      <details key="start" value="535"/>
-      <details key="end" value="549"/>
+      <details key="start" value="605"/>
+      <details key="end" value="619"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.15" references="/0/generateConfigFiles/%.2/%.4">
-      <details key="start" value="558"/>
-      <details key="end" value="565"/>
+      <details key="start" value="628"/>
+      <details key="end" value="635"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.16" references="/0/generateConfigFiles/%.3">
-      <details key="start" value="929"/>
-      <details key="end" value="930"/>
-      <details key="line" value="46"/>
-    </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/generateConfigFiles/%.4">
-      <details key="start" value="930"/>
-      <details key="end" value="1114"/>
+      <details key="start" value="999"/>
+      <details key="end" value="1000"/>
       <details key="line" value="47"/>
     </eAnnotations>
-    <eAnnotations source="positions.18" references="/0/generateConfigFiles/%.4/%">
-      <details key="start" value="971"/>
-      <details key="end" value="1024"/>
+    <eAnnotations source="positions.17" references="/0/generateConfigFiles/%.4">
+      <details key="start" value="1000"/>
+      <details key="end" value="1184"/>
       <details key="line" value="48"/>
     </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateConfigFiles/%.4/%">
+      <details key="start" value="1041"/>
+      <details key="end" value="1094"/>
+      <details key="line" value="49"/>
+    </eAnnotations>
     <eAnnotations source="positions.19" references="/0/generateConfigFiles/%.4/%.1">
-      <details key="start" value="1025"/>
-      <details key="end" value="1028"/>
+      <details key="start" value="1095"/>
+      <details key="end" value="1098"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.20" references="/0/generateConfigFiles/%.4/%.2">
-      <details key="start" value="1030"/>
-      <details key="end" value="1039"/>
-      <details key="line" value="51"/>
+      <details key="start" value="1100"/>
+      <details key="end" value="1109"/>
+      <details key="line" value="52"/>
     </eAnnotations>
     <eAnnotations source="positions.21" references="/0/generateConfigFiles/%.4/%.3">
-      <details key="start" value="1040"/>
-      <details key="end" value="1043"/>
+      <details key="start" value="1110"/>
+      <details key="end" value="1113"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.22" references="/0/generateConfigFiles/%.4/%.4">
-      <details key="start" value="1045"/>
-      <details key="end" value="1070"/>
-      <details key="line" value="52"/>
+      <details key="start" value="1115"/>
+      <details key="end" value="1140"/>
+      <details key="line" value="53"/>
     </eAnnotations>
     <eAnnotations source="positions.23" references="/0/generateConfigFiles/%.4/%.5">
-      <details key="start" value="1071"/>
-      <details key="end" value="1074"/>
+      <details key="start" value="1141"/>
+      <details key="end" value="1144"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.24" references="/0/generateConfigFiles/%.4/%.6">
-      <details key="start" value="1076"/>
-      <details key="end" value="1098"/>
-      <details key="line" value="54"/>
+      <details key="start" value="1146"/>
+      <details key="end" value="1168"/>
+      <details key="line" value="55"/>
     </eAnnotations>
     <eAnnotations source="positions.25" references="/0/generateConfigFiles/%.4/%.7">
-      <details key="start" value="1099"/>
-      <details key="end" value="1102"/>
+      <details key="start" value="1169"/>
+      <details key="end" value="1172"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.26" references="/0/generateConfigFiles/%.4/%.8">
-      <details key="start" value="1104"/>
-      <details key="end" value="1107"/>
-      <details key="line" value="55"/>
+      <details key="start" value="1174"/>
+      <details key="end" value="1177"/>
+      <details key="line" value="56"/>
     </eAnnotations>
     <eAnnotations source="positions.27" references="/0/generateConfigFiles/%.4/%.9">
-      <details key="start" value="937"/>
-      <details key="end" value="952"/>
+      <details key="start" value="1007"/>
+      <details key="end" value="1022"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.28" references="/0/generateConfigFiles/%.4/%.10">
-      <details key="start" value="961"/>
-      <details key="end" value="968"/>
+      <details key="start" value="1031"/>
+      <details key="end" value="1038"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.29" references="/0/generateConfigFiles/%.5">
-      <details key="start" value="1115"/>
-      <details key="end" value="1116"/>
-      <details key="line" value="57"/>
-    </eAnnotations>
-    <eAnnotations source="positions.30" references="/0/generateConfigFiles/%.6">
-      <details key="start" value="1116"/>
-      <details key="end" value="1485"/>
+      <details key="start" value="1185"/>
+      <details key="end" value="1186"/>
       <details key="line" value="58"/>
     </eAnnotations>
-    <eAnnotations source="positions.31" references="/0/generateConfigFiles/%.6/%">
-      <details key="start" value="1158"/>
-      <details key="end" value="1350"/>
+    <eAnnotations source="positions.30" references="/0/generateConfigFiles/%.6">
+      <details key="start" value="1186"/>
+      <details key="end" value="1555"/>
       <details key="line" value="59"/>
     </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/generateConfigFiles/%.6/%">
+      <details key="start" value="1228"/>
+      <details key="end" value="1420"/>
+      <details key="line" value="60"/>
+    </eAnnotations>
     <eAnnotations source="positions.32" references="/0/generateConfigFiles/%.6/%.1">
-      <details key="start" value="1351"/>
-      <details key="end" value="1354"/>
+      <details key="start" value="1421"/>
+      <details key="end" value="1424"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.33" references="/0/generateConfigFiles/%.6/%.2">
-      <details key="start" value="1356"/>
-      <details key="end" value="1370"/>
-      <details key="line" value="67"/>
+      <details key="start" value="1426"/>
+      <details key="end" value="1440"/>
+      <details key="line" value="68"/>
     </eAnnotations>
     <eAnnotations source="positions.34" references="/0/generateConfigFiles/%.6/%.3">
-      <details key="start" value="1371"/>
-      <details key="end" value="1374"/>
+      <details key="start" value="1441"/>
+      <details key="end" value="1444"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.35" references="/0/generateConfigFiles/%.6/%.4">
-      <details key="start" value="1376"/>
-      <details key="end" value="1478"/>
-      <details key="line" value="68"/>
+      <details key="start" value="1446"/>
+      <details key="end" value="1548"/>
+      <details key="line" value="69"/>
     </eAnnotations>
     <eAnnotations source="positions.36" references="/0/generateConfigFiles/%.6/%.5">
-      <details key="start" value="1123"/>
-      <details key="end" value="1139"/>
+      <details key="start" value="1193"/>
+      <details key="end" value="1209"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.37" references="/0/generateConfigFiles/%.6/%.6">
-      <details key="start" value="1148"/>
-      <details key="end" value="1155"/>
+      <details key="start" value="1218"/>
+      <details key="end" value="1225"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.38" references="/0/generateConfigFiles/frontendApp">

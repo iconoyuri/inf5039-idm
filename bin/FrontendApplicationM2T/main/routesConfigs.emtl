@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
   <mtl:Module name="routesConfigs" nsURI="FrontendApplicationM2T::main::routesConfigs" startHeaderPosition="29" endHeaderPosition="160">
     <input>
-      <takesTypesFrom href="http://www.FrontendApplicationMM.com#/"/>
+      <takesTypesFrom href="http://www.frontendapplicationmm.com#/"/>
     </input>
     <ownedModuleElement xsi:type="mtl:Template" name="routesConfigs" visibility="Public" main="true">
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
@@ -12,27 +12,27 @@
           <body xsi:type="ocl.ecore:PropertyCallExp">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
             <source xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/routesConfigs/%/%.1/page">
-              <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+              <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
             </source>
-            <referredProperty xsi:type="ecore:EAttribute" href="http://www.FrontendApplicationMM.com#//Page/name"/>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.frontendapplicationmm.com#//Page/name"/>
           </body>
           <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" from '../views/"/>
           <body xsi:type="ocl.ecore:PropertyCallExp">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
             <source xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/routesConfigs/%/%.1/page">
-              <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+              <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
             </source>
-            <referredProperty xsi:type="ecore:EAttribute" href="http://www.FrontendApplicationMM.com#//Page/name"/>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.frontendapplicationmm.com#//Page/name"/>
           </body>
           <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".vue'&#xA;"/>
           <loopVariable name="page">
-            <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+            <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
           </loopVariable>
           <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/8/OrderedSet(Page)">
             <source xsi:type="ocl.ecore:VariableExp" name="app" referredVariable="/0/routesConfigs/app">
-              <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+              <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
             </source>
-            <referredProperty xsi:type="ecore:EReference" href="http://www.FrontendApplicationMM.com#//App_Frontend/pages"/>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.frontendapplicationmm.com#//App_Frontend/pages"/>
           </iterSet>
           <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
@@ -48,41 +48,41 @@
           <body xsi:type="ocl.ecore:PropertyCallExp">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
             <source xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/routesConfigs/%/%.5/page">
-              <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+              <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
             </source>
-            <referredProperty xsi:type="ecore:EAttribute" href="http://www.FrontendApplicationMM.com#//Page/name"/>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.frontendapplicationmm.com#//Page/name"/>
           </body>
           <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="',&#xA;      name: '"/>
           <body xsi:type="ocl.ecore:PropertyCallExp">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
             <source xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/routesConfigs/%/%.5/page">
-              <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+              <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
             </source>
-            <referredProperty xsi:type="ecore:EAttribute" href="http://www.FrontendApplicationMM.com#//Page/name"/>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.frontendapplicationmm.com#//Page/name"/>
           </body>
           <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="',&#xA;      component: "/>
           <body xsi:type="ocl.ecore:PropertyCallExp">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
             <source xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/routesConfigs/%/%.5/page">
-              <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+              <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
             </source>
-            <referredProperty xsi:type="ecore:EAttribute" href="http://www.FrontendApplicationMM.com#//Page/name"/>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.frontendapplicationmm.com#//Page/name"/>
           </body>
           <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;    },&#xA;"/>
           <loopVariable name="page">
-            <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+            <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
           </loopVariable>
           <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/8/OrderedSet(Page)">
             <source xsi:type="ocl.ecore:VariableExp" name="app" referredVariable="/0/routesConfigs/app">
-              <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+              <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
             </source>
-            <referredProperty xsi:type="ecore:EReference" href="http://www.FrontendApplicationMM.com#//App_Frontend/pages"/>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.frontendapplicationmm.com#//App_Frontend/pages"/>
           </iterSet>
           <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           </each>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="    {&#xA;      path: '*',&#xA;&#x9;  redirect: '/'&#xA;    },&#xA;    {&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="    {&#xA;      path: '*',&#xA;&#x9;  redirect: '/'&#xA;    },&#xA;"/>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="  "/>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
@@ -96,7 +96,7 @@
         </charset>
       </body>
       <parameter name="app">
-        <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+        <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
       </parameter>
     </ownedModuleElement>
   </mtl:Module>
@@ -127,7 +127,7 @@
         <eAnnotations source="MTL" references="/0/routesConfigs"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="app">
-          <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+          <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
         </eParameters>
       </eOperations>
     </eClassifiers>
@@ -151,9 +151,9 @@
         <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
       </eAnnotations>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="FrontendApplicationMM_App_Frontend_Class">
+    <eClassifiers xsi:type="ecore:EClass" name="frontendapplicationmm_App_Frontend_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
-        <references href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+        <references href="http://www.frontendapplicationmm.com#//App_Frontend"/>
       </eAnnotations>
     </eClassifiers>
   </ecore:EPackage>
@@ -161,75 +161,75 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ecore:EPackage name="collections">
     <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Page)" instanceClassName="java.util.LinkedHashSet">
-      <elementType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+      <elementType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
     </eClassifiers>
   </ecore:EPackage>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="i">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//Page"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="i">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
@@ -402,7 +402,7 @@
     </eAnnotations>
     <eAnnotations source="positions.33" references="/0/routesConfigs/%/%.6">
       <details key="start" value="639"/>
-      <details key="end" value="692"/>
+      <details key="end" value="686"/>
       <details key="line" value="24"/>
     </eAnnotations>
     <eAnnotations source="positions.34" references="/0/routesConfigs/%/%.7">

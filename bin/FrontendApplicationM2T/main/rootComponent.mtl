@@ -1,5 +1,5 @@
 [comment encoding = UTF-8 /]
-[module rootComponent('http://www.FrontendApplicationMM.com')]
+[module rootComponent('http://www.frontendapplicationmm.com')]
 
 
 [template public rootComponent(app : App_Frontend)]

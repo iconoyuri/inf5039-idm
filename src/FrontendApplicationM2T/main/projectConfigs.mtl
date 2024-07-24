@@ -1,9 +1,10 @@
 [comment encoding = UTF-8 /]
 
-[module projectConfigs('http://www.FrontendApplicationMM.com')]
+[module projectConfigs('http://www.frontendapplicationmm.com')]
 
 
 [template public generateConfigFiles(frontendApp : App_Frontend)]
+[comment][template public main(frontendApp : App_Frontend)][/comment]
 [comment @main/]
 [file ('index.html', false, 'UTF-8')]
 <!DOCTYPE html>

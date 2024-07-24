@@ -1,5 +1,5 @@
 [comment encoding = UTF-8 /]
-[module routesConfigs('http://www.FrontendApplicationMM.com')]
+[module routesConfigs('http://www.frontendapplicationmm.com')]
 
 
 [template public routesConfigs(app : App_Frontend)]
@@ -25,8 +25,8 @@ const router = createRouter({
       path: '*',
 	  redirect: '/'
     },
-    {
-[comment]      path: '/',
+[comment]     {
+     path: '/',
 	  redirect: {name : '[app.pages.name/]'}
     }[/comment]
   [']'/]

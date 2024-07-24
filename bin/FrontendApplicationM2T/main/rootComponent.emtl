@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
   <mtl:Module name="rootComponent" nsURI="FrontendApplicationM2T::main::rootComponent" startHeaderPosition="29" endHeaderPosition="160">
     <input>
-      <takesTypesFrom href="http://www.FrontendApplicationMM.com#/"/>
+      <takesTypesFrom href="http://www.frontendapplicationmm.com#/"/>
     </input>
     <ownedModuleElement xsi:type="mtl:Template" name="rootComponent" visibility="Public" main="true">
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
@@ -15,7 +15,7 @@
         </charset>
       </body>
       <parameter name="app">
-        <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+        <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
       </parameter>
     </ownedModuleElement>
   </mtl:Module>
@@ -46,7 +46,7 @@
         <eAnnotations source="MTL" references="/0/rootComponent"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="app">
-          <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+          <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
         </eParameters>
       </eOperations>
     </eClassifiers>
@@ -70,9 +70,9 @@
         <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
       </eAnnotations>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="FrontendApplicationMM_App_Frontend_Class">
+    <eClassifiers xsi:type="ecore:EClass" name="frontendapplicationmm_App_Frontend_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
-        <references href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+        <references href="http://www.frontendapplicationmm.com#//App_Frontend"/>
       </eAnnotations>
     </eClassifiers>
   </ecore:EPackage>
@@ -80,19 +80,19 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>

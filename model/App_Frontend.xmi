@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrontendApplicationMM:App_Frontend
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:FrontendApplicationMM="http://www.FrontendApplicationMM.com"
+    xsi:schemaLocation="http://www.FrontendApplicationMM.com ../metamodel/FrontendMetamodel.ecore"
+    name="FrontendApp">
+  <pages name="Home"/>
+</FrontendApplicationMM:App_Frontend>
