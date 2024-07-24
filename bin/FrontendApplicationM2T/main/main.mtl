@@ -1,14 +1,31 @@
 [comment encoding = UTF-8 /]
-[module main('http://www.FrontendApplicationMM.com')]
+[module main('http://www.FrontendApplicationMM.com')/]
+[import FrontendApplicationM2T::main::rootComponent/]
+[import FrontendApplicationM2T::main::projectConfigs/]
+[import FrontendApplicationM2T::main::routesConfigs/]
 
-[import FrontendApplicationM2T::main::projectConfigs /]
-[import FrontendApplicationM2T::main::routesConfigs /]
 
-[template public main(app : App_Frontend)]
+[template public mainApp_Frontend(aApp_Frontend : App_Frontend)]
 	
 	[comment @main /]
-[comment]	[file (app.name.concat('.java'), false, 'UTF-8')]
-		
-	[/file][/comment]
+	[aApp_Frontend.rootComponent()/]
+	[aApp_Frontend.generateConfigFiles()/]
+	[aApp_Frontend.routesConfigs()/]
+
+	
+	[file ('src/main.js', false, 'UTF-8')]
+	import './assets/main.css'
+	
+	import { createApp } from 'vue'
+	import App from './App.vue'
+	import router from './router'
+	
+	const app = createApp(App)
+	
+	app.use(router)
+	
+	app.mount('#app')
+	
+	[/file]
 	
 [/template]

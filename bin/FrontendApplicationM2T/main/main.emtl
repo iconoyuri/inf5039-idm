@@ -1,15 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="main" nsURI="FrontendApplicationM2T::main::main" startHeaderPosition="29" endHeaderPosition="137">
+  <mtl:Module name="main" nsURI="FrontendApplicationM2T::main::main" startHeaderPosition="29" endHeaderPosition="81">
     <input>
       <takesTypesFrom href="http://www.FrontendApplicationMM.com#/"/>
     </input>
+    <imports href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/rootComponent.emtl#/0"/>
     <imports href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/projectConfigs.emtl#/0"/>
     <imports href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/routesConfigs.emtl#/0"/>
-    <ownedModuleElement xsi:type="mtl:Template" name="main" visibility="Public" main="true">
+    <ownedModuleElement xsi:type="mtl:Template" name="mainApp_Frontend" visibility="Public" main="true">
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#xA;"/>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
-      <parameter name="app">
+      <body xsi:type="mtl:TemplateInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/rootComponent.emtl#/0/rootComponent"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="aApp_Frontend" referredVariable="/0/mainApp_Frontend/aApp_Frontend">
+          <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;"/>
+      <body xsi:type="mtl:TemplateInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/projectConfigs.emtl#/0/generateConfigFiles"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="aApp_Frontend" referredVariable="/0/mainApp_Frontend/aApp_Frontend">
+          <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;"/>
+      <body xsi:type="mtl:TemplateInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/routesConfigs.emtl#/0/routesConfigs"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="aApp_Frontend" referredVariable="/0/mainApp_Frontend/aApp_Frontend">
+          <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#xA;&#x9;&#xA;"/>
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;import './assets/main.css'&#xA;&#x9;&#xA;&#x9;import { createApp } from 'vue'&#xA;&#x9;import App from './App.vue'&#xA;&#x9;import router from './router'&#xA;&#x9;&#xA;&#x9;const app = createApp(App)&#xA;&#x9;&#xA;&#x9;app.use(router)&#xA;&#x9;&#xA;&#x9;app.mount('#app')&#xA;&#x9;&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="src/main.js">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+      <parameter name="aApp_Frontend">
         <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
       </parameter>
     </ownedModuleElement>
@@ -34,11 +69,47 @@
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
         <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
       </eAnnotations>
-      <eOperations name="main">
+      <eOperations name="mainApp_Frontend">
         <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
-        <eAnnotations source="MTL" references="/0/main"/>
+        <eAnnotations source="MTL" references="/0/mainApp_Frontend"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aApp_Frontend">
+          <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="rootComponent">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/rootComponent.emtl#/0/rootComponent"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="app">
+          <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateConfigFiles">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/projectConfigs.emtl#/0/generateConfigFiles"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="frontendApp">
+          <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="routesConfigs">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/routesConfigs.emtl#/0/routesConfigs"/>
+        </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="app">
           <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
@@ -84,28 +155,113 @@
     <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.FrontendApplicationMM.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
-    <eAnnotations source="positions.0" references="/0/main">
-      <details key="start" value="196"/>
-      <details key="end" value="355"/>
-      <details key="line" value="7"/>
-    </eAnnotations>
-    <eAnnotations source="positions.1" references="/0/main/%">
-      <details key="start" value="239"/>
-      <details key="end" value="241"/>
+    <eAnnotations source="positions.0" references="/0/mainApp_Frontend">
+      <details key="start" value="249"/>
+      <details key="end" value="703"/>
       <details key="line" value="8"/>
     </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/main/%.1">
-      <details key="start" value="342"/>
-      <details key="end" value="343"/>
+    <eAnnotations source="positions.1" references="/0/mainApp_Frontend/%">
+      <details key="start" value="314"/>
+      <details key="end" value="316"/>
+      <details key="line" value="9"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/mainApp_Frontend/%.1">
+      <details key="start" value="335"/>
+      <details key="end" value="336"/>
+      <details key="line" value="11"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/mainApp_Frontend/%.2">
+      <details key="start" value="337"/>
+      <details key="end" value="366"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/mainApp_Frontend/%.2/aApp_Frontend">
+      <details key="start" value="337"/>
+      <details key="end" value="350"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/mainApp_Frontend/%.3">
+      <details key="start" value="368"/>
+      <details key="end" value="370"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/mainApp_Frontend/%.4">
+      <details key="start" value="371"/>
+      <details key="end" value="406"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/mainApp_Frontend/%.4/aApp_Frontend">
+      <details key="start" value="371"/>
+      <details key="end" value="384"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/mainApp_Frontend/%.5">
+      <details key="start" value="408"/>
+      <details key="end" value="410"/>
       <details key="line" value="13"/>
     </eAnnotations>
-    <eAnnotations source="positions.3" references="/0/main/app">
-      <details key="start" value="218"/>
-      <details key="end" value="236"/>
-      <details key="line" value="7"/>
+    <eAnnotations source="positions.9" references="/0/mainApp_Frontend/%.6">
+      <details key="start" value="411"/>
+      <details key="end" value="440"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/mainApp_Frontend/%.6/aApp_Frontend">
+      <details key="start" value="411"/>
+      <details key="end" value="424"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/mainApp_Frontend/%.7">
+      <details key="start" value="442"/>
+      <details key="end" value="446"/>
+      <details key="line" value="14"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/mainApp_Frontend/%.8">
+      <details key="start" value="447"/>
+      <details key="end" value="689"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/mainApp_Frontend/%.8/%">
+      <details key="start" value="486"/>
+      <details key="end" value="681"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/mainApp_Frontend/%.8/%.1">
+      <details key="start" value="454"/>
+      <details key="end" value="467"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/mainApp_Frontend/%.8/%.2">
+      <details key="start" value="476"/>
+      <details key="end" value="483"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/mainApp_Frontend/%.9">
+      <details key="start" value="690"/>
+      <details key="end" value="691"/>
+      <details key="line" value="30"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/mainApp_Frontend/aApp_Frontend">
+      <details key="start" value="283"/>
+      <details key="end" value="311"/>
+      <details key="line" value="8"/>
     </eAnnotations>
   </ecore:EAnnotation>
 </xmi:XMI>

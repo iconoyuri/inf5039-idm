@@ -25,24 +25,24 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 
 /**
- * Entry point of the 'RoutesConfigs' generation module.
+ * Entry point of the 'RootComponent' generation module.
  *
  * @generated
  */
-public class RoutesConfigs extends AbstractAcceleoGenerator {
+public class RootComponent extends AbstractAcceleoGenerator {
     /**
      * The name of the module.
      *
      * @generated
      */
-    public static final String MODULE_FILE_NAME = "/FrontendApplicationM2T/main/routesConfigs";
+    public static final String MODULE_FILE_NAME = "/FrontendApplicationM2T/main/rootComponent";
     
     /**
      * The name of the templates that are to be generated.
      *
      * @generated
      */
-    public static final String[] TEMPLATE_NAMES = { "routesConfigs" };
+    public static final String[] TEMPLATE_NAMES = { "rootComponent" };
     
     /**
      * The list of properties files from the launch parameters (Launch configuration).
@@ -65,7 +65,7 @@ public class RoutesConfigs extends AbstractAcceleoGenerator {
      *
      * @generated
      */
-    public RoutesConfigs() {
+    public RootComponent() {
         // Empty implementation
     }
 
@@ -85,7 +85,7 @@ public class RoutesConfigs extends AbstractAcceleoGenerator {
      *             the model cannot be loaded.
      * @generated
      */
-    public RoutesConfigs(URI modelURI, File targetFolder,
+    public RootComponent(URI modelURI, File targetFolder,
             List<? extends Object> arguments) throws IOException {
         initialize(modelURI, targetFolder, arguments);
     }
@@ -106,7 +106,7 @@ public class RoutesConfigs extends AbstractAcceleoGenerator {
      *             This can be thrown in two scenarios : the module cannot be found, or it cannot be loaded.
      * @generated
      */
-    public RoutesConfigs(EObject model, File targetFolder,
+    public RootComponent(EObject model, File targetFolder,
             List<? extends Object> arguments) throws IOException {
         initialize(model, targetFolder, arguments);
     }
@@ -141,7 +141,7 @@ public class RoutesConfigs extends AbstractAcceleoGenerator {
                  * add in "arguments" this "String" attribute.
                  */
                 
-                RoutesConfigs generator = new RoutesConfigs(modelURI, folder, arguments);
+                RootComponent generator = new RootComponent(modelURI, folder, arguments);
                 
                 /*
                  * Add the properties from the launch arguments.

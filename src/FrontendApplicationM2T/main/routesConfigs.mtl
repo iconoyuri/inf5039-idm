@@ -2,7 +2,7 @@
 [module routesConfigs('http://www.FrontendApplicationMM.com')]
 
 
-[template public main(app : App_Frontend)]
+[template public routesConfigs(app : App_Frontend)]
 [comment @main/]
 [file ('src/router/index.js', false, 'UTF-8')]
 import { createRouter, createWebHistory } from 'vue-router'

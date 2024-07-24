@@ -6,7 +6,7 @@
     </input>
     <ownedModuleElement xsi:type="mtl:Template" name="generateConfigFiles" visibility="Public" main="true">
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;!DOCTYPE html>&#xA;&lt;html lang=&quot;en&quot;>&#xA;  &lt;head>&#xA;    &lt;meta charset=&quot;UTF-8&quot;>&#xA;    &lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot;>&#xA;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>&#xA;    &lt;title>"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;!DOCTYPE html>&#xA;&lt;html lang=&quot;en&quot;>&#xA;  &lt;head>&#xA;    &lt;meta charset=&quot;UTF-8&quot;>&#xA;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>&#xA;    &lt;title>"/>
         <body xsi:type="ocl.ecore:PropertyCallExp">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="ocl.ecore:VariableExp" name="frontendApp" referredVariable="/0/generateConfigFiles/frontendApp">
@@ -212,33 +212,33 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateConfigFiles">
       <details key="start" value="96"/>
-      <details key="end" value="1539"/>
+      <details key="end" value="1497"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateConfigFiles/%">
       <details key="start" value="179"/>
-      <details key="end" value="567"/>
+      <details key="end" value="525"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generateConfigFiles/%/%">
       <details key="start" value="217"/>
-      <details key="end" value="414"/>
+      <details key="end" value="372"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generateConfigFiles/%/%.1">
-      <details key="start" value="415"/>
-      <details key="end" value="431"/>
+      <details key="start" value="373"/>
+      <details key="end" value="389"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generateConfigFiles/%/%.1/frontendApp">
-      <details key="start" value="415"/>
-      <details key="end" value="426"/>
+      <details key="start" value="373"/>
+      <details key="end" value="384"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/generateConfigFiles/%/%.2">
-      <details key="start" value="434"/>
-      <details key="end" value="560"/>
-      <details key="line" value="15"/>
+      <details key="start" value="392"/>
+      <details key="end" value="518"/>
+      <details key="line" value="14"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/generateConfigFiles/%/%.3">
       <details key="start" value="186"/>
@@ -251,153 +251,153 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.8" references="/0/generateConfigFiles/%.1">
-      <details key="start" value="568"/>
-      <details key="end" value="570"/>
-      <details key="line" value="23"/>
+      <details key="start" value="526"/>
+      <details key="end" value="528"/>
+      <details key="line" value="22"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/generateConfigFiles/%.2">
-      <details key="start" value="570"/>
-      <details key="end" value="970"/>
-      <details key="line" value="25"/>
+      <details key="start" value="528"/>
+      <details key="end" value="928"/>
+      <details key="line" value="24"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/generateConfigFiles/%.2/%">
-      <details key="start" value="610"/>
-      <details key="end" value="623"/>
-      <details key="line" value="26"/>
+      <details key="start" value="568"/>
+      <details key="end" value="581"/>
+      <details key="line" value="25"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/generateConfigFiles/%.2/%.1">
-      <details key="start" value="624"/>
-      <details key="end" value="640"/>
+      <details key="start" value="582"/>
+      <details key="end" value="598"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/generateConfigFiles/%.2/%.1/frontendApp">
-      <details key="start" value="624"/>
-      <details key="end" value="635"/>
+      <details key="start" value="582"/>
+      <details key="end" value="593"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.13" references="/0/generateConfigFiles/%.2/%.2">
-      <details key="start" value="642"/>
-      <details key="end" value="963"/>
-      <details key="line" value="27"/>
+      <details key="start" value="600"/>
+      <details key="end" value="921"/>
+      <details key="line" value="26"/>
     </eAnnotations>
     <eAnnotations source="positions.14" references="/0/generateConfigFiles/%.2/%.3">
-      <details key="start" value="577"/>
-      <details key="end" value="591"/>
+      <details key="start" value="535"/>
+      <details key="end" value="549"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.15" references="/0/generateConfigFiles/%.2/%.4">
-      <details key="start" value="600"/>
-      <details key="end" value="607"/>
+      <details key="start" value="558"/>
+      <details key="end" value="565"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.16" references="/0/generateConfigFiles/%.3">
-      <details key="start" value="971"/>
-      <details key="end" value="972"/>
-      <details key="line" value="47"/>
+      <details key="start" value="929"/>
+      <details key="end" value="930"/>
+      <details key="line" value="46"/>
     </eAnnotations>
     <eAnnotations source="positions.17" references="/0/generateConfigFiles/%.4">
-      <details key="start" value="972"/>
-      <details key="end" value="1156"/>
-      <details key="line" value="48"/>
+      <details key="start" value="930"/>
+      <details key="end" value="1114"/>
+      <details key="line" value="47"/>
     </eAnnotations>
     <eAnnotations source="positions.18" references="/0/generateConfigFiles/%.4/%">
-      <details key="start" value="1013"/>
-      <details key="end" value="1066"/>
-      <details key="line" value="49"/>
+      <details key="start" value="971"/>
+      <details key="end" value="1024"/>
+      <details key="line" value="48"/>
     </eAnnotations>
     <eAnnotations source="positions.19" references="/0/generateConfigFiles/%.4/%.1">
-      <details key="start" value="1067"/>
-      <details key="end" value="1070"/>
+      <details key="start" value="1025"/>
+      <details key="end" value="1028"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.20" references="/0/generateConfigFiles/%.4/%.2">
-      <details key="start" value="1072"/>
-      <details key="end" value="1081"/>
-      <details key="line" value="52"/>
+      <details key="start" value="1030"/>
+      <details key="end" value="1039"/>
+      <details key="line" value="51"/>
     </eAnnotations>
     <eAnnotations source="positions.21" references="/0/generateConfigFiles/%.4/%.3">
-      <details key="start" value="1082"/>
-      <details key="end" value="1085"/>
+      <details key="start" value="1040"/>
+      <details key="end" value="1043"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.22" references="/0/generateConfigFiles/%.4/%.4">
-      <details key="start" value="1087"/>
-      <details key="end" value="1112"/>
-      <details key="line" value="53"/>
+      <details key="start" value="1045"/>
+      <details key="end" value="1070"/>
+      <details key="line" value="52"/>
     </eAnnotations>
     <eAnnotations source="positions.23" references="/0/generateConfigFiles/%.4/%.5">
-      <details key="start" value="1113"/>
-      <details key="end" value="1116"/>
+      <details key="start" value="1071"/>
+      <details key="end" value="1074"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.24" references="/0/generateConfigFiles/%.4/%.6">
-      <details key="start" value="1118"/>
-      <details key="end" value="1140"/>
-      <details key="line" value="55"/>
+      <details key="start" value="1076"/>
+      <details key="end" value="1098"/>
+      <details key="line" value="54"/>
     </eAnnotations>
     <eAnnotations source="positions.25" references="/0/generateConfigFiles/%.4/%.7">
-      <details key="start" value="1141"/>
-      <details key="end" value="1144"/>
+      <details key="start" value="1099"/>
+      <details key="end" value="1102"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.26" references="/0/generateConfigFiles/%.4/%.8">
-      <details key="start" value="1146"/>
-      <details key="end" value="1149"/>
-      <details key="line" value="56"/>
+      <details key="start" value="1104"/>
+      <details key="end" value="1107"/>
+      <details key="line" value="55"/>
     </eAnnotations>
     <eAnnotations source="positions.27" references="/0/generateConfigFiles/%.4/%.9">
-      <details key="start" value="979"/>
-      <details key="end" value="994"/>
+      <details key="start" value="937"/>
+      <details key="end" value="952"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.28" references="/0/generateConfigFiles/%.4/%.10">
-      <details key="start" value="1003"/>
-      <details key="end" value="1010"/>
+      <details key="start" value="961"/>
+      <details key="end" value="968"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.29" references="/0/generateConfigFiles/%.5">
-      <details key="start" value="1157"/>
-      <details key="end" value="1158"/>
-      <details key="line" value="58"/>
+      <details key="start" value="1115"/>
+      <details key="end" value="1116"/>
+      <details key="line" value="57"/>
     </eAnnotations>
     <eAnnotations source="positions.30" references="/0/generateConfigFiles/%.6">
-      <details key="start" value="1158"/>
-      <details key="end" value="1527"/>
-      <details key="line" value="59"/>
+      <details key="start" value="1116"/>
+      <details key="end" value="1485"/>
+      <details key="line" value="58"/>
     </eAnnotations>
     <eAnnotations source="positions.31" references="/0/generateConfigFiles/%.6/%">
-      <details key="start" value="1200"/>
-      <details key="end" value="1392"/>
-      <details key="line" value="60"/>
+      <details key="start" value="1158"/>
+      <details key="end" value="1350"/>
+      <details key="line" value="59"/>
     </eAnnotations>
     <eAnnotations source="positions.32" references="/0/generateConfigFiles/%.6/%.1">
-      <details key="start" value="1393"/>
-      <details key="end" value="1396"/>
+      <details key="start" value="1351"/>
+      <details key="end" value="1354"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.33" references="/0/generateConfigFiles/%.6/%.2">
-      <details key="start" value="1398"/>
-      <details key="end" value="1412"/>
-      <details key="line" value="68"/>
+      <details key="start" value="1356"/>
+      <details key="end" value="1370"/>
+      <details key="line" value="67"/>
     </eAnnotations>
     <eAnnotations source="positions.34" references="/0/generateConfigFiles/%.6/%.3">
-      <details key="start" value="1413"/>
-      <details key="end" value="1416"/>
+      <details key="start" value="1371"/>
+      <details key="end" value="1374"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.35" references="/0/generateConfigFiles/%.6/%.4">
-      <details key="start" value="1418"/>
-      <details key="end" value="1520"/>
-      <details key="line" value="69"/>
+      <details key="start" value="1376"/>
+      <details key="end" value="1478"/>
+      <details key="line" value="68"/>
     </eAnnotations>
     <eAnnotations source="positions.36" references="/0/generateConfigFiles/%.6/%.5">
-      <details key="start" value="1165"/>
-      <details key="end" value="1181"/>
+      <details key="start" value="1123"/>
+      <details key="end" value="1139"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.37" references="/0/generateConfigFiles/%.6/%.6">
-      <details key="start" value="1190"/>
-      <details key="end" value="1197"/>
+      <details key="start" value="1148"/>
+      <details key="end" value="1155"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.38" references="/0/generateConfigFiles/frontendApp">
