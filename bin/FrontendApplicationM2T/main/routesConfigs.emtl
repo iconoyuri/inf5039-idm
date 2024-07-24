@@ -82,8 +82,8 @@
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           </each>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="    {&#xA;      path: '*',&#xA;&#x9;  redirect: '/'&#xA;    },&#xA;"/>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="  "/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="    {&#xA;      path: '*',&#xA;&#x9;  redirect: '/'&#xA;    },&#xA;    {&#xA;     path: '/',&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;  redirect: {name : '404'}&#xA;    }&#xA;  "/>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </body>
@@ -237,12 +237,12 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/routesConfigs">
       <details key="start" value="94"/>
-      <details key="end" value="831"/>
+      <details key="end" value="858"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/routesConfigs/%">
       <details key="start" value="163"/>
-      <details key="end" value="819"/>
+      <details key="end" value="846"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/routesConfigs/%/%">
@@ -402,23 +402,23 @@
     </eAnnotations>
     <eAnnotations source="positions.33" references="/0/routesConfigs/%/%.6">
       <details key="start" value="639"/>
-      <details key="end" value="686"/>
+      <details key="end" value="708"/>
       <details key="line" value="24"/>
     </eAnnotations>
     <eAnnotations source="positions.34" references="/0/routesConfigs/%/%.7">
-      <details key="start" value="776"/>
-      <details key="end" value="778"/>
-      <details key="line" value="32"/>
+      <details key="start" value="769"/>
+      <details key="end" value="805"/>
+      <details key="line" value="31"/>
     </eAnnotations>
     <eAnnotations source="positions.35" references="/0/routesConfigs/%/%.8">
-      <details key="start" value="779"/>
-      <details key="end" value="782"/>
+      <details key="start" value="806"/>
+      <details key="end" value="809"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.36" references="/0/routesConfigs/%/%.9">
-      <details key="start" value="784"/>
-      <details key="end" value="812"/>
-      <details key="line" value="33"/>
+      <details key="start" value="811"/>
+      <details key="end" value="839"/>
+      <details key="line" value="34"/>
     </eAnnotations>
     <eAnnotations source="positions.37" references="/0/routesConfigs/%/%.10">
       <details key="start" value="170"/>

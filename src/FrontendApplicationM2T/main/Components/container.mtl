@@ -1,0 +1,45 @@
+[comment encoding = UTF-8 /]
+[module container('http://www.frontendapplicationmm.com')]
+
+
+[template public generateContainer(container : Container)]
+<Container spacing='[container.spacing /]' alignment='[container.alignment /]'>
+[for (subContainer : Container | container.containers)]
+	<Container spacing='[subContainer.spacing /]' alignment='[subContainer.alignment /]'> </Container>
+[/for]
+</Container>
+[/template]
+
+
+[template public generateVueComponent(container : Container)]
+[file ('components/Container.vue', false, 'UTF-8')]
+
+<script setup>
+	const props = defineProps(['['/]'spacing', alignment[']'/])
+	const spacing = props.spacing + 'px';
+</script>
+
+<template>
+	<div :class="{
+			horizontal : alignment == 'horizontal'
+			vertical : alignment == 'vertical'
+			}">
+		<slot></slot>
+	</div>
+</template>
+
+<style scoped>
+	div {
+		display: flex;
+		gap: v-bind(spacing);
+	}
+		div.horizontal {
+		flex-direction : row;
+	}
+	div.vertical {
+		flex-direction : column;
+	}
+</style>
+[/file]
+
+[/template]

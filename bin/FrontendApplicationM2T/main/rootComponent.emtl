@@ -1,12 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="rootComponent" nsURI="FrontendApplicationM2T::main::rootComponent" startHeaderPosition="29" endHeaderPosition="160">
+  <mtl:Module name="rootComponent" nsURI="FrontendApplicationM2T::main::rootComponent" startHeaderPosition="29" endHeaderPosition="147">
     <input>
       <takesTypesFrom href="http://www.frontendapplicationmm.com#/"/>
     </input>
+    <imports href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/Components/page.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="rootComponent" visibility="Public" main="true">
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&lt;script setup>&#xA;import { RouterLink, RouterView } from 'vue-router'&#xA;&lt;/script>&#xA;&#xA;&lt;template>&#xA;&#xA;&lt;nav>&#xA;&#x9;&lt;p>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="app" referredVariable="/0/rootComponent/app">
+            <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.frontendapplicationmm.com#//App_Frontend/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/p>&#xA;&#x9;&lt;ul>&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&lt;li>&#xA;&#x9;&#x9;&#x9;&lt;RouterLink to=&quot;/"/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/rootComponent/%/%.3/page">
+              <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.frontendapplicationmm.com#//Page/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;>"/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/rootComponent/%/%.3/page">
+              <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.frontendapplicationmm.com#//Page/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/RouterLink>&#xA;&#x9;&#x9;&lt;/li>&#xA;&#x9;&#x9;"/>
+          <body xsi:type="mtl:TemplateInvocation">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <definition href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/Components/page.emtl#/0/generatePage"/>
+            <argument xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/rootComponent/%/%.3/page">
+              <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
+            </argument>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <loopVariable name="page">
+            <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/9/OrderedSet(Page)">
+            <source xsi:type="ocl.ecore:VariableExp" name="app" referredVariable="/0/rootComponent/app">
+              <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.frontendapplicationmm.com#//App_Frontend/pages"/>
+          </iterSet>
+          <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </each>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&lt;/ul>&#xA;&lt;/nav>&#xA;&#xA;&lt;RouterView />&#xA;&lt;/template>&#xA;&#xA;&#xA;"/>
         <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="App.vue">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </fileUrl>
@@ -49,6 +98,18 @@
           <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
         </eParameters>
       </eOperations>
+      <eOperations name="generatePage">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/Components/page.emtl#/0/generatePage"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="page">
+          <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
+        </eParameters>
+      </eOperations>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OclAny_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
@@ -75,6 +136,11 @@
         <references href="http://www.frontendapplicationmm.com#//App_Frontend"/>
       </eAnnotations>
     </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="frontendapplicationmm_Page_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.frontendapplicationmm.com#//Page"/>
+      </eAnnotations>
+    </eClassifiers>
   </ecore:EPackage>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
@@ -95,38 +161,165 @@
     <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="collections">
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Page)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/rootComponent">
-      <details key="start" value="94"/>
-      <details key="end" value="218"/>
-      <details key="line" value="5"/>
+      <details key="start" value="151"/>
+      <details key="end" value="597"/>
+      <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/rootComponent/%">
-      <details key="start" value="163"/>
-      <details key="end" value="206"/>
-      <details key="line" value="7"/>
-    </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/rootComponent/%/%">
-      <details key="start" value="198"/>
-      <details key="end" value="199"/>
+      <details key="start" value="220"/>
+      <details key="end" value="585"/>
       <details key="line" value="8"/>
     </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/rootComponent/%/%">
+      <details key="start" value="255"/>
+      <details key="end" value="356"/>
+      <details key="line" value="9"/>
+    </eAnnotations>
     <eAnnotations source="positions.3" references="/0/rootComponent/%/%.1">
-      <details key="start" value="170"/>
-      <details key="end" value="179"/>
+      <details key="start" value="357"/>
+      <details key="end" value="365"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/rootComponent/%/%.2">
-      <details key="start" value="188"/>
-      <details key="end" value="195"/>
+    <eAnnotations source="positions.4" references="/0/rootComponent/%/%.1/app">
+      <details key="start" value="357"/>
+      <details key="end" value="360"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/rootComponent/app">
-      <details key="start" value="125"/>
-      <details key="end" value="143"/>
-      <details key="line" value="5"/>
+    <eAnnotations source="positions.5" references="/0/rootComponent/%/%.2">
+      <details key="start" value="367"/>
+      <details key="end" value="378"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/rootComponent/%/%.3">
+      <details key="start" value="379"/>
+      <details key="end" value="533"/>
+      <details key="line" value="19"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/rootComponent/%/%.3/%">
+      <details key="start" value="427"/>
+      <details key="end" value="454"/>
+      <details key="line" value="20"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/rootComponent/%/%.3/%.1">
+      <details key="start" value="455"/>
+      <details key="end" value="464"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/rootComponent/%/%.3/%.1/page">
+      <details key="start" value="455"/>
+      <details key="end" value="459"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/rootComponent/%/%.3/%.2">
+      <details key="start" value="466"/>
+      <details key="end" value="468"/>
+      <details key="line" value="21"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/rootComponent/%/%.3/%.3">
+      <details key="start" value="469"/>
+      <details key="end" value="478"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/rootComponent/%/%.3/%.3/page">
+      <details key="start" value="469"/>
+      <details key="end" value="473"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/rootComponent/%/%.3/%.4">
+      <details key="start" value="480"/>
+      <details key="end" value="504"/>
+      <details key="line" value="21"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/rootComponent/%/%.3/%.5">
+      <details key="start" value="505"/>
+      <details key="end" value="523"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/rootComponent/%/%.3/%.5/page">
+      <details key="start" value="518"/>
+      <details key="end" value="522"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/rootComponent/%/%.3/%.6">
+      <details key="start" value="525"/>
+      <details key="end" value="526"/>
+      <details key="line" value="24"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/rootComponent/%/%.3/page">
+      <details key="start" value="385"/>
+      <details key="end" value="396"/>
+      <details key="line" value="19"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/rootComponent/%/%.3/%.7">
+      <details key="start" value="399"/>
+      <details key="end" value="408"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/rootComponent/%/%.3/%.7/app">
+      <details key="start" value="399"/>
+      <details key="end" value="402"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/rootComponent/%/%.3/%.8">
+      <details key="start" value="420"/>
+      <details key="end" value="424"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/rootComponent/%/%.4">
+      <details key="start" value="534"/>
+      <details key="end" value="578"/>
+      <details key="line" value="25"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/rootComponent/%/%.5">
+      <details key="start" value="227"/>
+      <details key="end" value="236"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/rootComponent/%/%.6">
+      <details key="start" value="245"/>
+      <details key="end" value="252"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/rootComponent/app">
+      <details key="start" value="182"/>
+      <details key="end" value="200"/>
+      <details key="line" value="6"/>
     </eAnnotations>
   </ecore:EAnnotation>
 </xmi:XMI>

@@ -1,0 +1,15 @@
+[comment encoding = UTF-8 /]
+[module page('http://www.frontendapplicationmm.com')]
+
+
+[template public generatePage(page : Page)]
+[file ('views/'.concat(page.name.concat('.vue')), false, 'UTF-8')]
+<script setup>
+
+</script>
+
+<template>
+	<p> [page.name/] </p>
+</template>
+[/file]
+[/template]

@@ -25,10 +25,11 @@ const router = createRouter({
       path: '*',
 	  redirect: '/'
     },
-[comment]     {
+    {
      path: '/',
-	  redirect: {name : '[app.pages.name/]'}
-    }[/comment]
+[comment]	  redirect: {name : '[app.pages.name/]'}[/comment]
+	  redirect: {name : '404'}
+    }
   [']'/]
 })
 

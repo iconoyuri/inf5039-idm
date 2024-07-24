@@ -3,8 +3,8 @@
 
 
 [import FrontendApplicationM2T::main::projectConfigs/]
-[import FrontendApplicationM2T::main::rootComponent/]
 [import FrontendApplicationM2T::main::routesConfigs/]
+[import FrontendApplicationM2T::main::rootComponent/]
 
 
 [template public main(app : App_Frontend)]
@@ -13,5 +13,7 @@
 	[app.generateConfigFiles()/]
 	[app.rootComponent()/]
 	[app.routesConfigs()/]
+
+
 	
 [/template]

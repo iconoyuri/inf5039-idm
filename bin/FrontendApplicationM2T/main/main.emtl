@@ -5,8 +5,8 @@
       <takesTypesFrom href="http://www.frontendapplicationmm.com#/"/>
     </input>
     <imports href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/projectConfigs.emtl#/0"/>
-    <imports href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/rootComponent.emtl#/0"/>
     <imports href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/routesConfigs.emtl#/0"/>
+    <imports href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/rootComponent.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="main" visibility="Public" main="true">
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#xA;"/>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
@@ -33,7 +33,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#xA;&#xA;&#x9;"/>
       <parameter name="app">
         <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
       </parameter>
@@ -81,24 +81,24 @@
           <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
         </eParameters>
       </eOperations>
-      <eOperations name="rootComponent">
-        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
-          <contents xsi:type="ocl.ecore:Constraint"/>
-        </eAnnotations>
-        <eAnnotations source="MTL">
-          <references href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/rootComponent.emtl#/0/rootComponent"/>
-        </eAnnotations>
-        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <eParameters name="app">
-          <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
-        </eParameters>
-      </eOperations>
       <eOperations name="routesConfigs">
         <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
           <references href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/routesConfigs.emtl#/0/routesConfigs"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="app">
+          <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="rootComponent">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/rootComponent.emtl#/0/rootComponent"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="app">
@@ -159,7 +159,7 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/main">
       <details key="start" value="251"/>
-      <details key="end" value="406"/>
+      <details key="end" value="408"/>
       <details key="line" value="10"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/main/%">
@@ -214,7 +214,7 @@
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/main/%.7">
       <details key="start" value="392"/>
-      <details key="end" value="394"/>
+      <details key="end" value="396"/>
       <details key="line" value="16"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/main/app">

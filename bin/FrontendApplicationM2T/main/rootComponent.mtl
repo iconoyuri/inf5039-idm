@@ -1,10 +1,33 @@
 [comment encoding = UTF-8 /]
 [module rootComponent('http://www.frontendapplicationmm.com')]
 
+[import FrontendApplicationM2T::main::Components::page/]
 
 [template public rootComponent(app : App_Frontend)]
 [comment @main/]
 [file ('App.vue', false, 'UTF-8')]
+
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+</script>
+
+<template>
+
+<nav>
+	<p>[app.name/]</p>
+	<ul>
+	[for (page : Page | app.pages) separator('\n')]
+		<li>
+			<RouterLink to="/[page.name/]">[page.name/]</RouterLink>
+		</li>
+		[generatePage(page)/]
+	[/for]
+	</ul>
+</nav>
+
+<RouterView />
+</template>
+
 
 [/file]
 [/template]
