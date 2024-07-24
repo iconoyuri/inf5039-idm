@@ -2,16 +2,7 @@
 [module container('http://www.frontendapplicationmm.com')]
 
 
-[template public generateContainer(container : Container)]
-<Container spacing='[container.spacing /]' alignment='[container.alignment /]'>
-[for (subContainer : Container | container.containers)]
-	<Container spacing='[subContainer.spacing /]' alignment='[subContainer.alignment /]'> </Container>
-[/for]
-</Container>
-[/template]
-
-
-[template public generateVueComponent(container : Container)]
+[template public generateContainerVueFile(container : Container)]
 [file ('components/Container.vue', false, 'UTF-8')]
 
 <script setup>

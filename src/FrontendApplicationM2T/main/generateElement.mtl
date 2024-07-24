@@ -1,0 +1,44 @@
+[comment encoding = UTF-8 /]
+[module generateElement('http://www.frontendapplicationmm.com')]
+
+
+
+[template public generateElement(container : Container)]
+<Container spacing='[container.spacing /]' alignment='[container.alignment /]'>
+[for (subContainer : Container | container.containers)]
+	[generateElement(subContainer)/]
+[/for]
+[for (subComponent : Component | container.components)]
+	[generateElement(subComponent)/]
+[/for]
+</Container>
+
+[/template]
+
+[template public generateElement(component : Component)]
+[comment][template public generateElement(image : Image)][/comment]
+[/template]
+
+[template public generateElement(image : Image)]
+	<Image source="[image.source/]" />
+[/template]
+
+[template public generateElement(text : Text)]
+	<Text value="[text.value/]" fontSize="[text.fontSize/]" />
+[/template]
+
+[template public generateElement(textField : TextField)]
+	<TextField value="[textField.value/]" label="[textField.label/]" maxLines="[textField.maxLines/]" indication="[textField.indication/]" />
+[/template]
+
+[template public generateElement(inputfield : InputField)]
+	<InputField value="[inputfield.value/]" label="[inputfield.label/]" type="[inputfield.type/]" indication="[inputfield.indication/]" />
+[/template]
+
+[template public generateElement(button : Button)]
+	<Button text="[button.text/]"/>
+[/template]
+
+[template public generateElement(link : Link)]
+	<Link text="[link.text/]" href="[link.href/]"/>
+[/template]

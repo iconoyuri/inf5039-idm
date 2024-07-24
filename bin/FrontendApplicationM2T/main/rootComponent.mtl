@@ -21,6 +21,7 @@ import { RouterLink, RouterView } from 'vue-router'
 			<RouterLink to="/[page.name/]">[page.name/]</RouterLink>
 		</li>
 		[generatePage(page)/]
+
 	[/for]
 	</ul>
 </nav>

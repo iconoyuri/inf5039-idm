@@ -1,22 +1,70 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Home from '../views/Home.vue'
+import HomePage from '../views/HomePage.vue'
 
-import Login from '../views/Login.vue'
+import RegisterPage from '../views/RegisterPage.vue'
+
+import LoginPage from '../views/LoginPage.vue'
+
+import ProductListPage from '../views/ProductListPage.vue'
+
+import ProductDetailPage from '../views/ProductDetailPage.vue'
+
+import CartPage from '../views/CartPage.vue'
+
+import CheckoutPage from '../views/CheckoutPage.vue'
+
+import OrderConfirmationPage from '../views/OrderConfirmationPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/Home',
-      name: 'Home',
-      component: Home
+      path: '/HomePage',
+      name: 'HomePage',
+      component: HomePage
     },
 
     {
-      path: '/Login',
-      name: 'Login',
-      component: Login
+      path: '/RegisterPage',
+      name: 'RegisterPage',
+      component: RegisterPage
+    },
+
+    {
+      path: '/LoginPage',
+      name: 'LoginPage',
+      component: LoginPage
+    },
+
+    {
+      path: '/ProductListPage',
+      name: 'ProductListPage',
+      component: ProductListPage
+    },
+
+    {
+      path: '/ProductDetailPage',
+      name: 'ProductDetailPage',
+      component: ProductDetailPage
+    },
+
+    {
+      path: '/CartPage',
+      name: 'CartPage',
+      component: CartPage
+    },
+
+    {
+      path: '/CheckoutPage',
+      name: 'CheckoutPage',
+      component: CheckoutPage
+    },
+
+    {
+      path: '/OrderConfirmationPage',
+      name: 'OrderConfirmationPage',
+      component: OrderConfirmationPage
     },
     {
       path: '*',
@@ -24,7 +72,7 @@ const router = createRouter({
     },
     {
      path: '/',
-	  redirect: {name : 'HomeLogin'}
+	  redirect: {name : '404'}
     }
   ]
 })

@@ -6,6 +6,16 @@
     xmlns:frontendapplicationmm="http://www.frontendapplicationmm.com"
     xsi:schemaLocation="http://www.frontendapplicationmm.com ../metamodel/FrontendMetamodel.ecore"
     name="FrontendApp">
-  <pages name="Home"/>
+  <pages name="Home">
+    <containers>
+      <components
+          xsi:type="frontendapplicationmm:Text"/>
+      <containers/>
+    </containers>
+    <containers/>
+    <containers/>
+    <components
+        xsi:type="frontendapplicationmm:Text"/>
+  </pages>
   <pages name="Login"/>
 </frontendapplicationmm:App_Frontend>

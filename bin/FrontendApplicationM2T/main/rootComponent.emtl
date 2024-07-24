@@ -41,7 +41,7 @@
               <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
             </argument>
           </body>
-          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#xA;"/>
           <loopVariable name="page">
             <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
           </loopVariable>
@@ -198,12 +198,12 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/rootComponent">
       <details key="start" value="151"/>
-      <details key="end" value="597"/>
+      <details key="end" value="598"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/rootComponent/%">
       <details key="start" value="220"/>
-      <details key="end" value="585"/>
+      <details key="end" value="586"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/rootComponent/%/%">
@@ -228,7 +228,7 @@
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/rootComponent/%/%.3">
       <details key="start" value="379"/>
-      <details key="end" value="533"/>
+      <details key="end" value="534"/>
       <details key="line" value="19"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/rootComponent/%/%.3/%">
@@ -278,7 +278,7 @@
     </eAnnotations>
     <eAnnotations source="positions.16" references="/0/rootComponent/%/%.3/%.6">
       <details key="start" value="525"/>
-      <details key="end" value="526"/>
+      <details key="end" value="527"/>
       <details key="line" value="24"/>
     </eAnnotations>
     <eAnnotations source="positions.17" references="/0/rootComponent/%/%.3/page">
@@ -302,9 +302,9 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.21" references="/0/rootComponent/%/%.4">
-      <details key="start" value="534"/>
-      <details key="end" value="578"/>
-      <details key="line" value="25"/>
+      <details key="start" value="535"/>
+      <details key="end" value="579"/>
+      <details key="line" value="26"/>
     </eAnnotations>
     <eAnnotations source="positions.22" references="/0/rootComponent/%/%.5">
       <details key="start" value="227"/>

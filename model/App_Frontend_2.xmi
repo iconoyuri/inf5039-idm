@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frontendapplicationmm:App_Frontend
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:frontendapplicationmm="http://www.frontendapplicationmm.com"
+    xsi:schemaLocation="http://www.frontendapplicationmm.com ../metamodel/FrontendMetamodel.ecore"    
+    name="SampleApp">
+  <pages name="HomePage">
+    <containers
+        spacing="10.0">
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          name="Welcome to the home page"
+          fontSize="24px"/>
+      <components
+          xsi:type="frontendapplicationmm:Button"
+          name="Click Me">
+        <events
+            name="buttonClicked"/>
+      </components>
+      <components
+          xsi:type="frontendapplicationmm:TextField"
+          name="Enter Your name"
+          maxLines="1"
+          indication="text"/>
+      <components
+          xsi:type="frontendapplicationmm:Form">
+        <components
+            xsi:type="frontendapplicationmm:InputField"
+            name="Email"
+            label="Email"
+            type="email"/>
+        <components
+            xsi:type="frontendapplicationmm:InputField"
+            name="Password"
+            label="password"
+            type="password"/>
+        <components
+            xsi:type="frontendapplicationmm:Button"
+            name="Submit">
+          <events
+              type="submit"
+              name="fromSubmitted"/>
+        </components>
+      </components>
+      <components
+          xsi:type="frontendapplicationmm:Image"
+          source="logo.png"/>
+    </containers>
+    <styles
+        className="containerStyle"
+        IdName="mainContainer"/>
+  </pages>
+</frontendapplicationmm:App_Frontend>

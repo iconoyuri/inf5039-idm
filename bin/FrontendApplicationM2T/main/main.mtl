@@ -13,7 +13,5 @@
 	[app.generateConfigFiles()/]
 	[app.rootComponent()/]
 	[app.routesConfigs()/]
-
-
 	
 [/template]

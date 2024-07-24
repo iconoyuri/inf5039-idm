@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frontendapplicationmm:App_Frontend
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:frontendapplicationmm="http://www.frontendapplicationmm.com"
+    xsi:schemaLocation="http://www.frontendapplicationmm.com ../metamodel/FrontendMetamodel.ecore"
+    name="ECommerceApp">
+  <pages name="HomePage">
+    <containers
+        spacing="20.0">
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          name="Welcome to Our Shop"
+          fontSize="32px"/>
+      <components
+          xsi:type="frontendapplicationmm:Image"
+          source="banner.jpg"/>
+      <components
+          xsi:type="frontendapplicationmm:Button"
+          name="Shop Now"
+          text="Shop Now">
+        <events
+            name="navigateToProductList"/>
+      </components>
+      <components
+          xsi:type="frontendapplicationmm:Button"
+          name="Login"
+          text="Login">
+        <events
+            name="navigateToLogin"/>
+      </components>
+      <components
+          xsi:type="frontendapplicationmm:Button"
+          name="Register"
+          text="Register">
+        <events
+            name="navigateToRegister"/>
+      </components>
+    </containers>
+    <styles
+        className="homeContainerStyle"
+        IdName="homeContainer"/>
+  </pages>
+  <pages name="RegisterPage">
+    <containers
+        spacing="20.0">
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          value="Register"
+          fontSize="32px"/>
+      <components
+          xsi:type="frontendapplicationmm:Form">
+        <components
+            xsi:type="frontendapplicationmm:InputField"
+            name="Username"
+            label="Username"/>
+        <components
+            xsi:type="frontendapplicationmm:InputField"
+            name="Email"
+            label="Email"
+            type="email"/>
+        <components
+            xsi:type="frontendapplicationmm:InputField"
+            name="Password"
+            label="Password"
+            type="password"/>
+        <components
+            xsi:type="frontendapplicationmm:Button"
+            name="Sign Up"
+            text="Sign Up"/>
+        <events
+            type="submit"
+            name="register"/>
+      </components>
+      <components
+          xsi:type="frontendapplicationmm:Button"
+          name="Back to Home"
+          text="Back to Home">
+        <events
+            name="navigateToHomePage"/>
+      </components>
+    </containers>
+    <styles
+        className="registerContainerStyle"
+        IdName="registerContainer"/>
+  </pages>
+  <pages name="LoginPage">
+    <containers
+        spacing="20.0">
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          value="Login"
+          fontSize="32px"/>
+      <components
+          xsi:type="frontendapplicationmm:Form">
+        <components
+            xsi:type="frontendapplicationmm:InputField"
+            name="Email"
+            value="Email"
+            type="email"/>
+        <components
+            xsi:type="frontendapplicationmm:InputField"
+            name="Password"
+            label="Password"
+            type="password"/>
+        <components
+            xsi:type="frontendapplicationmm:InputField"
+            name="ConfirmPassword"
+            label="ConfirmPassword"
+            type="password"/>
+        <components
+            xsi:type="frontendapplicationmm:Button"
+            name="Login"
+            text="Login">
+          <events
+              type="submit"
+              name="login"/>
+        </components>
+      </components>
+      <components
+          xsi:type="frontendapplicationmm:Button"
+          name="Back to Home"
+          text="Back to Home">
+        <events
+            name="navigateToHomePage"/>
+      </components>
+    </containers>
+    <styles
+        className="loginContainerStyle"
+        IdName="loginContainer"/>
+  </pages>
+  <pages name="ProductListPage">
+    <containers
+        spacing="15.0">
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          name="Our Products"
+          fontSize="32px"/>
+      <containers
+          alignment="horizontal"
+          spacing="10.0">
+        <components
+            xsi:type="frontendapplicationmm:Image"
+            source="product1.jpg"/>
+        <components
+            xsi:type="frontendapplicationmm:Text"
+            value="Product 1"
+            fontSize="20px"/>
+        <components
+            xsi:type="frontendapplicationmm:Text"
+            value="Price: 100000 FCFA"
+            fontSize="18px"/>
+        <components
+            xsi:type="frontendapplicationmm:Button"
+            text="View Details">
+          <events
+              name="viewProduct1Details"/>
+        </components>
+      </containers>
+      <containers
+          alignment="horizontal"
+          spacing="10.0">
+        <components
+            xsi:type="frontendapplicationmm:Image"
+            source="product2.jpg"/>
+        <components
+            xsi:type="frontendapplicationmm:Text"
+            value="Product 2"
+            fontSize="20px"/>
+        <components
+            xsi:type="frontendapplicationmm:Text"
+            value="Price: 125000 FCFA"
+            fontSize="18px"/>
+        <components
+            xsi:type="frontendapplicationmm:Button"
+            text="View Details">
+          <events
+              name="viewProduct2Details"/>
+        </components>
+      </containers>
+    </containers>
+    <styles
+        className="productListContainerStyle"
+        IdName="productListContainer"/>
+  </pages>
+  <pages name="ProductDetailPage">
+    <containers
+        spacing="15.0">
+      <components
+          xsi:type="frontendapplicationmm:Image"
+          source="productDetail.jpg"/>
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          value="Product Name"
+          fontSize="28px"/>
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          value="Product Description"
+          fontSize="18px"/>
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          value="Price: 285150 FCFA"
+          fontSize="20px"/>
+      <components
+          xsi:type="frontendapplicationmm:Button"
+          name="Add to Cart"
+          text="Add to Cart">
+        <events
+            name="addToCart"/>
+      </components>
+      <components
+          xsi:type="frontendapplicationmm:Button"
+          name="Go Back"
+          text="Go Back">
+        <events
+            name="goBackToProductList"/>
+      </components>
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          name=""
+          value="User Reviews"
+          fontSize="24px"/>
+      <containers
+          spacing="20.0">
+        <components
+            xsi:type="frontendapplicationmm:Text"
+            value="User1: Great product!"
+            fontSize="16px"/>
+        <components
+            xsi:type="frontendapplicationmm:Text"
+            value="User2: Highly recommend."
+            fontSize="16px"/>
+        <components
+            xsi:type="frontendapplicationmm:Form">
+          <components
+              xsi:type="frontendapplicationmm:InputField"
+              name="Add a review"
+              label="Add a review"/>
+          <components
+              xsi:type="frontendapplicationmm:Button"
+              name="Submit"
+              text="Submit">
+            <events
+                name="submitReview"/>
+          </components>
+        </components>
+      </containers>
+    </containers>
+    <styles
+        className="productDetailsContainerStyle"
+        IdName="productDetailsContainer"/>
+  </pages>
+  <pages name="CartPage">
+    <containers
+        spacing="15.0">
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          value="Your Cart"
+          fontSize="32px"/>
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          value="Total: 225000FCFA"
+          fontSize="20px"/>
+      <components
+          xsi:type="frontendapplicationmm:Button"
+          name="Checkout"
+          text="Checkout">
+        <events
+            name="proceedToCheckout"/>
+      </components>
+      <containers
+          alignment="horizontal"
+          spacing="10.0">
+        <components
+            xsi:type="frontendapplicationmm:Text"
+            value="Product 1"
+            fontSize="20px"/>
+        <components
+            xsi:type="frontendapplicationmm:Text"
+            value="Quantity : 1"
+            fontSize="16px"/>
+        <components
+            xsi:type="frontendapplicationmm:Text"
+            value="Price: 100000FCFA"
+            fontSize="16px"/>
+        <components
+            xsi:type="frontendapplicationmm:Button"
+            text="Remove">
+          <events
+              name="removeProduct1"/>
+        </components>
+      </containers>
+      <containers
+          alignment="horizontal"
+          spacing="10.0">
+        <components
+            xsi:type="frontendapplicationmm:Text"
+            value="Product 2"
+            fontSize="20px"/>
+        <components
+            xsi:type="frontendapplicationmm:Text"
+            value="Quantity : 2"
+            fontSize="16px"/>
+        <components
+            xsi:type="frontendapplicationmm:Text"
+            value="Price: 125000FCFA"
+            fontSize="16px"/>
+        <components
+            xsi:type="frontendapplicationmm:Button"
+            text="Remove">
+          <events
+              name="removeProduct2"/>
+        </components>
+      </containers>
+    </containers>
+    <styles
+        className="cartContainerStyle"
+        IdName="cartContainer"/>
+  </pages>
+  <pages name="CheckoutPage">
+    <containers
+        spacing="20.0">
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          value="Checkout"
+          fontSize="32px"/>
+      <components
+          xsi:type="frontendapplicationmm:Form">
+        <components
+            xsi:type="frontendapplicationmm:InputField"
+            name="Name"/>
+        <components
+            xsi:type="frontendapplicationmm:InputField"
+            name="Shipping Address"
+            label="Shipping Address"/>
+        <components
+            xsi:type="frontendapplicationmm:InputField"
+            name="Credit Card Number"
+            label="Credit Card Number"/>
+        <components
+            xsi:type="frontendapplicationmm:Button"
+            name="Place Order"
+            text="Place Order">
+          <events
+              name="placeOrder"/>
+        </components>
+      </components>
+      <components
+          xsi:type="frontendapplicationmm:Button"
+          name="Go Back"
+          text="Go Back"/>
+    </containers>
+    <styles
+        className="checkoutContainerStyle"
+        IdName="checkoutContainer"/>
+  </pages>
+  <pages name="OrderConfirmationPage">
+    <containers
+        spacing="20.0">
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          value="Thank You for Your Order!"
+          fontSize="32px"/>
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          value="Your order has been placed successfully."
+          fontSize="20px"/>
+      <components
+          xsi:type="frontendapplicationmm:Text"
+          value="Order Number: #123456"
+          fontSize="18px"/>
+      <components
+          xsi:type="frontendapplicationmm:Button"
+          name="Continue Shopping"
+          text="Continue Shopping">
+        <events
+            name="navigateToHomePage"/>
+      </components>
+    </containers>
+    <styles
+        className="confirmationContainerStyle"
+        IdName="confirmationContainer"/>
+  </pages>
+</frontendapplicationmm:App_Frontend>

@@ -33,7 +33,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#xA;&#xA;&#x9;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;"/>
       <parameter name="app">
         <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
       </parameter>
@@ -159,7 +159,7 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/main">
       <details key="start" value="251"/>
-      <details key="end" value="408"/>
+      <details key="end" value="406"/>
       <details key="line" value="10"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/main/%">
@@ -214,7 +214,7 @@
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/main/%.7">
       <details key="start" value="392"/>
-      <details key="end" value="396"/>
+      <details key="end" value="394"/>
       <details key="line" value="16"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/main/app">

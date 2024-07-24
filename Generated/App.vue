@@ -6,17 +6,55 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
 
 <nav>
-	<p>FrontendApp</p>
+	<p>ECommerceApp</p>
 	<ul>
 		<li>
-			<RouterLink to="/Home">Home</RouterLink>
+			<RouterLink to="/HomePage">HomePage</RouterLink>
 		</li>
 		
 
+
 		<li>
-			<RouterLink to="/Login">Login</RouterLink>
+			<RouterLink to="/RegisterPage">RegisterPage</RouterLink>
 		</li>
 		
+
+
+		<li>
+			<RouterLink to="/LoginPage">LoginPage</RouterLink>
+		</li>
+		
+
+
+		<li>
+			<RouterLink to="/ProductListPage">ProductListPage</RouterLink>
+		</li>
+		
+
+
+		<li>
+			<RouterLink to="/ProductDetailPage">ProductDetailPage</RouterLink>
+		</li>
+		
+
+
+		<li>
+			<RouterLink to="/CartPage">CartPage</RouterLink>
+		</li>
+		
+
+
+		<li>
+			<RouterLink to="/CheckoutPage">CheckoutPage</RouterLink>
+		</li>
+		
+
+
+		<li>
+			<RouterLink to="/OrderConfirmationPage">OrderConfirmationPage</RouterLink>
+		</li>
+		
+
 	</ul>
 </nav>
 
