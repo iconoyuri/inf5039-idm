@@ -11,7 +11,7 @@
 	
 	[comment @main /]
 	[app.generateConfigFiles()/]
-	[app.rootComponent()/]
 	[app.routesConfigs()/]
+	[app.rootComponent()/]
 	
 [/template]

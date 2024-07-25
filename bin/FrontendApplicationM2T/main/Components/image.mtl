@@ -1,0 +1,22 @@
+[comment encoding = UTF-8 /]
+[module image('http://www.frontendapplicationmm.com')]
+
+
+
+[template public generateImageVueFile(image : Image)]
+[file ('src/components/Image.vue', false, 'UTF-8')]
+
+<script setup>
+	const props = defineProps(['['/]'source'[']'/])
+</script>
+
+<template>
+	<img :src="source" />
+</template>
+
+<style scoped>
+
+</style>
+[/file]
+
+[/template]

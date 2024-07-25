@@ -5,7 +5,8 @@
       <takesTypesFrom href="http://www.frontendapplicationmm.com#/"/>
     </input>
     <imports href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/Components/page.emtl#/0"/>
-    <ownedModuleElement xsi:type="mtl:Template" name="rootComponent" visibility="Public" main="true">
+    <ownedModuleElement xsi:type="mtl:Template" name="rootComponent" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#xA;"/>
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&lt;script setup>&#xA;import { RouterLink, RouterView } from 'vue-router'&#xA;&lt;/script>&#xA;&#xA;&lt;template>&#xA;&#xA;&lt;nav>&#xA;&#x9;&lt;p>"/>
         <body xsi:type="ocl.ecore:PropertyCallExp">
@@ -20,7 +21,7 @@
           <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&lt;li>&#xA;&#x9;&#x9;&#x9;&lt;RouterLink to=&quot;/"/>
           <body xsi:type="ocl.ecore:PropertyCallExp">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-            <source xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/rootComponent/%/%.3/page">
+            <source xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/rootComponent/%.1/%.3/page">
               <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
             </source>
             <referredProperty xsi:type="ecore:EAttribute" href="http://www.frontendapplicationmm.com#//Page/name"/>
@@ -28,7 +29,7 @@
           <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;>"/>
           <body xsi:type="ocl.ecore:PropertyCallExp">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-            <source xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/rootComponent/%/%.3/page">
+            <source xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/rootComponent/%.1/%.3/page">
               <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
             </source>
             <referredProperty xsi:type="ecore:EAttribute" href="http://www.frontendapplicationmm.com#//Page/name"/>
@@ -37,7 +38,7 @@
           <body xsi:type="mtl:TemplateInvocation">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
             <definition href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/Components/page.emtl#/0/generatePage"/>
-            <argument xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/rootComponent/%/%.3/page">
+            <argument xsi:type="ocl.ecore:VariableExp" name="page" referredVariable="/0/rootComponent/%.1/%.3/page">
               <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Page"/>
             </argument>
           </body>
@@ -55,8 +56,8 @@
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           </each>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&lt;/ul>&#xA;&lt;/nav>&#xA;&#xA;&lt;RouterView />&#xA;&lt;/template>&#xA;&#xA;&#xA;"/>
-        <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="App.vue">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&lt;/ul>&#xA;&lt;/nav>&#xA;&#xA;&lt;RouterView />&#xA;&lt;/template>&#xA;&#xA;&lt;style scoped>&#xA;ul {&#xA;&#x9;list-style-type: none;&#xA;&#x9;display: flex;&#xA;}&#xA;&lt;/style>&#xA;&#xA;&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="src/App.vue">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </fileUrl>
         <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
@@ -197,129 +198,134 @@
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/rootComponent">
-      <details key="start" value="151"/>
-      <details key="end" value="598"/>
-      <details key="line" value="6"/>
+      <details key="start" value="152"/>
+      <details key="end" value="660"/>
+      <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/rootComponent/%">
-      <details key="start" value="220"/>
-      <details key="end" value="586"/>
+      <details key="start" value="204"/>
+      <details key="end" value="206"/>
       <details key="line" value="8"/>
     </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/rootComponent/%/%">
-      <details key="start" value="255"/>
-      <details key="end" value="356"/>
-      <details key="line" value="9"/>
+    <eAnnotations source="positions.2" references="/0/rootComponent/%.1">
+      <details key="start" value="206"/>
+      <details key="end" value="648"/>
+      <details key="line" value="10"/>
     </eAnnotations>
-    <eAnnotations source="positions.3" references="/0/rootComponent/%/%.1">
-      <details key="start" value="357"/>
-      <details key="end" value="365"/>
+    <eAnnotations source="positions.3" references="/0/rootComponent/%.1/%">
+      <details key="start" value="245"/>
+      <details key="end" value="346"/>
+      <details key="line" value="11"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/rootComponent/%.1/%.1">
+      <details key="start" value="347"/>
+      <details key="end" value="355"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/rootComponent/%/%.1/app">
-      <details key="start" value="357"/>
-      <details key="end" value="360"/>
+    <eAnnotations source="positions.5" references="/0/rootComponent/%.1/%.1/app">
+      <details key="start" value="347"/>
+      <details key="end" value="350"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/rootComponent/%/%.2">
-      <details key="start" value="367"/>
-      <details key="end" value="378"/>
-      <details key="line" value="17"/>
-    </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/rootComponent/%/%.3">
-      <details key="start" value="379"/>
-      <details key="end" value="534"/>
+    <eAnnotations source="positions.6" references="/0/rootComponent/%.1/%.2">
+      <details key="start" value="357"/>
+      <details key="end" value="368"/>
       <details key="line" value="19"/>
     </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/rootComponent/%/%.3/%">
-      <details key="start" value="427"/>
+    <eAnnotations source="positions.7" references="/0/rootComponent/%.1/%.3">
+      <details key="start" value="369"/>
+      <details key="end" value="524"/>
+      <details key="line" value="21"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/rootComponent/%.1/%.3/%">
+      <details key="start" value="417"/>
+      <details key="end" value="444"/>
+      <details key="line" value="22"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/rootComponent/%.1/%.3/%.1">
+      <details key="start" value="445"/>
       <details key="end" value="454"/>
-      <details key="line" value="20"/>
-    </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/rootComponent/%/%.3/%.1">
-      <details key="start" value="455"/>
-      <details key="end" value="464"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/rootComponent/%/%.3/%.1/page">
-      <details key="start" value="455"/>
-      <details key="end" value="459"/>
+    <eAnnotations source="positions.10" references="/0/rootComponent/%.1/%.3/%.1/page">
+      <details key="start" value="445"/>
+      <details key="end" value="449"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.10" references="/0/rootComponent/%/%.3/%.2">
-      <details key="start" value="466"/>
+    <eAnnotations source="positions.11" references="/0/rootComponent/%.1/%.3/%.2">
+      <details key="start" value="456"/>
+      <details key="end" value="458"/>
+      <details key="line" value="23"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/rootComponent/%.1/%.3/%.3">
+      <details key="start" value="459"/>
       <details key="end" value="468"/>
-      <details key="line" value="21"/>
-    </eAnnotations>
-    <eAnnotations source="positions.11" references="/0/rootComponent/%/%.3/%.3">
-      <details key="start" value="469"/>
-      <details key="end" value="478"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/rootComponent/%/%.3/%.3/page">
-      <details key="start" value="469"/>
-      <details key="end" value="473"/>
+    <eAnnotations source="positions.13" references="/0/rootComponent/%.1/%.3/%.3/page">
+      <details key="start" value="459"/>
+      <details key="end" value="463"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.13" references="/0/rootComponent/%/%.3/%.4">
-      <details key="start" value="480"/>
-      <details key="end" value="504"/>
-      <details key="line" value="21"/>
+    <eAnnotations source="positions.14" references="/0/rootComponent/%.1/%.3/%.4">
+      <details key="start" value="470"/>
+      <details key="end" value="494"/>
+      <details key="line" value="23"/>
     </eAnnotations>
-    <eAnnotations source="positions.14" references="/0/rootComponent/%/%.3/%.5">
-      <details key="start" value="505"/>
-      <details key="end" value="523"/>
+    <eAnnotations source="positions.15" references="/0/rootComponent/%.1/%.3/%.5">
+      <details key="start" value="495"/>
+      <details key="end" value="513"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.15" references="/0/rootComponent/%/%.3/%.5/page">
-      <details key="start" value="518"/>
-      <details key="end" value="522"/>
+    <eAnnotations source="positions.16" references="/0/rootComponent/%.1/%.3/%.5/page">
+      <details key="start" value="508"/>
+      <details key="end" value="512"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.16" references="/0/rootComponent/%/%.3/%.6">
-      <details key="start" value="525"/>
-      <details key="end" value="527"/>
-      <details key="line" value="24"/>
-    </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/rootComponent/%/%.3/page">
-      <details key="start" value="385"/>
-      <details key="end" value="396"/>
-      <details key="line" value="19"/>
-    </eAnnotations>
-    <eAnnotations source="positions.18" references="/0/rootComponent/%/%.3/%.7">
-      <details key="start" value="399"/>
-      <details key="end" value="408"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.19" references="/0/rootComponent/%/%.3/%.7/app">
-      <details key="start" value="399"/>
-      <details key="end" value="402"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.20" references="/0/rootComponent/%/%.3/%.8">
-      <details key="start" value="420"/>
-      <details key="end" value="424"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.21" references="/0/rootComponent/%/%.4">
-      <details key="start" value="535"/>
-      <details key="end" value="579"/>
+    <eAnnotations source="positions.17" references="/0/rootComponent/%.1/%.3/%.6">
+      <details key="start" value="515"/>
+      <details key="end" value="517"/>
       <details key="line" value="26"/>
     </eAnnotations>
-    <eAnnotations source="positions.22" references="/0/rootComponent/%/%.5">
-      <details key="start" value="227"/>
-      <details key="end" value="236"/>
+    <eAnnotations source="positions.18" references="/0/rootComponent/%.1/%.3/page">
+      <details key="start" value="375"/>
+      <details key="end" value="386"/>
+      <details key="line" value="21"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/rootComponent/%.1/%.3/%.7">
+      <details key="start" value="389"/>
+      <details key="end" value="398"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.23" references="/0/rootComponent/%/%.6">
-      <details key="start" value="245"/>
-      <details key="end" value="252"/>
+    <eAnnotations source="positions.20" references="/0/rootComponent/%.1/%.3/%.7/app">
+      <details key="start" value="389"/>
+      <details key="end" value="392"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.24" references="/0/rootComponent/app">
-      <details key="start" value="182"/>
-      <details key="end" value="200"/>
-      <details key="line" value="6"/>
+    <eAnnotations source="positions.21" references="/0/rootComponent/%.1/%.3/%.8">
+      <details key="start" value="410"/>
+      <details key="end" value="414"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/rootComponent/%.1/%.4">
+      <details key="start" value="525"/>
+      <details key="end" value="641"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/rootComponent/%.1/%.5">
+      <details key="start" value="213"/>
+      <details key="end" value="226"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/rootComponent/%.1/%.6">
+      <details key="start" value="235"/>
+      <details key="end" value="242"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/rootComponent/app">
+      <details key="start" value="183"/>
+      <details key="end" value="201"/>
+      <details key="line" value="7"/>
     </eAnnotations>
   </ecore:EAnnotation>
 </xmi:XMI>

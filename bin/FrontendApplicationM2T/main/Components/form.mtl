@@ -1,0 +1,20 @@
+[comment encoding = UTF-8 /]
+[module form('http://www.frontendapplicationmm.com')]
+
+
+[template public generateFormVueFile(form : Form)]
+[file ('src/components/Form.vue', false, 'UTF-8')]
+
+<script setup>
+	// const props = defineProps(['['/]'spacing'[']'/])
+</script>
+
+<template>
+	<form>
+		<slot></slot>
+	</form>
+</template>
+
+[/file]
+
+[/template]

@@ -20,54 +20,54 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/HomePage',
+      path: '/homepage',
       name: 'HomePage',
       component: HomePage
     },
 
     {
-      path: '/RegisterPage',
+      path: '/registerpage',
       name: 'RegisterPage',
       component: RegisterPage
     },
 
     {
-      path: '/LoginPage',
+      path: '/loginpage',
       name: 'LoginPage',
       component: LoginPage
     },
 
     {
-      path: '/ProductListPage',
+      path: '/productlistpage',
       name: 'ProductListPage',
       component: ProductListPage
     },
 
     {
-      path: '/ProductDetailPage',
+      path: '/productdetailpage',
       name: 'ProductDetailPage',
       component: ProductDetailPage
     },
 
     {
-      path: '/CartPage',
+      path: '/cartpage',
       name: 'CartPage',
       component: CartPage
     },
 
     {
-      path: '/CheckoutPage',
+      path: '/checkoutpage',
       name: 'CheckoutPage',
       component: CheckoutPage
     },
 
     {
-      path: '/OrderConfirmationPage',
+      path: '/orderconfirmationpage',
       name: 'OrderConfirmationPage',
       component: OrderConfirmationPage
     },
     {
-      path: '*',
+      path: '/:catchAll(.*)',
 	  redirect: '/'
     },
     {

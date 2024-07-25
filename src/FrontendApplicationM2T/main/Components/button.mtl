@@ -1,0 +1,22 @@
+[comment encoding = UTF-8 /]
+[module button('http://www.frontendapplicationmm.com')]
+
+
+
+[template public generateButtonVueFile(button : Button)]
+[file ('src/components/Button.vue', false, 'UTF-8')]
+
+<script setup>
+	const props = defineProps(['['/]'text'[']'/])
+</script>
+
+<template>
+	<button>{{ text }}</button>
+</template>
+
+<style scoped>
+
+</style>
+[/file]
+
+[/template]

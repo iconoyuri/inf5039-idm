@@ -3,7 +3,6 @@
 
 
 [template public routesConfigs(app : App_Frontend)]
-[comment @main/]
 [file ('src/router/index.js', false, 'UTF-8')]
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -16,13 +15,13 @@ const router = createRouter({
   routes: ['['/]
 	[for (page : Page | app.pages) separator('\n')]
     {
-      path: '/[page.name/]',
+      path: '/[page.name.toLower()/]',
       name: '[page.name/]',
       component: [page.name/]
     },
 	[/for]
     {
-      path: '*',
+      path: '/:catchAll(.*)',
 	  redirect: '/'
     },
     {

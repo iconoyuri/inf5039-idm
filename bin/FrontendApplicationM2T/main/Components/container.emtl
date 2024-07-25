@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="container" nsURI="FrontendApplicationM2T::main::Components::container" startHeaderPosition="29" endHeaderPosition="255">
+  <mtl:Module name="container" nsURI="FrontendApplicationM2T::main::Components::container" startHeaderPosition="29" endHeaderPosition="259">
     <input>
       <takesTypesFrom href="http://www.frontendapplicationmm.com#/"/>
     </input>
@@ -10,12 +10,12 @@
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="'spacing', alignment"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="'spacing', 'alignment'"/>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=")&#xA;&#x9;const spacing = props.spacing + 'px';&#xA;&lt;/script>&#xA;&#xA;&lt;template>&#xA;&#x9;&lt;div :class=&quot;{&#xA;&#x9;&#x9;&#x9;horizontal : alignment == 'horizontal'&#xA;&#x9;&#x9;&#x9;vertical : alignment == 'vertical'&#xA;&#x9;&#x9;&#x9;}&quot;>&#xA;&#x9;&#x9;&lt;slot>&lt;/slot>&#xA;&#x9;&lt;/div>&#xA;&lt;/template>&#xA;&#xA;&lt;style scoped>&#xA;&#x9;div {&#xA;&#x9;&#x9;display: flex;&#xA;&#x9;&#x9;gap: v-bind(spacing);&#xA;&#x9;}&#xA;&#x9;&#x9;div.horizontal {&#xA;&#x9;&#x9;flex-direction : row;&#xA;&#x9;}&#xA;&#x9;div.vertical {&#xA;&#x9;&#x9;flex-direction : column;&#xA;&#x9;}&#xA;&lt;/style>&#xA;"/>
-        <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="components/Container.vue">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=")&#xA;&#x9;const spacing = props.spacing + 'px';&#xA;&lt;/script>&#xA;&#xA;&lt;template>&#xA;&#x9;&lt;div :class=&quot;{&#xA;&#x9;&#x9;&#x9;horizontal : alignment == 'horizontal',&#xA;&#x9;&#x9;&#x9;vertical : alignment == 'vertical'&#xA;&#x9;&#x9;&#x9;}&quot;>&#xA;&#x9;&#x9;&lt;slot>&lt;/slot>&#xA;&#x9;&lt;/div>&#xA;&lt;/template>&#xA;&#xA;&lt;style scoped>&#xA;&#x9;div {&#xA;&#x9;&#x9;display: flex;&#xA;&#x9;&#x9;gap: v-bind(spacing);&#xA;&#x9;}&#xA;&#x9;&#x9;div.horizontal {&#xA;&#x9;&#x9;flex-direction : row;&#xA;&#x9;}&#xA;&#x9;div.vertical {&#xA;&#x9;&#x9;flex-direction : column;&#xA;&#x9;}&#xA;&lt;/style>&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="src/components/Container.vue">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </fileUrl>
         <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
@@ -115,52 +115,52 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateContainerVueFile">
       <details key="start" value="90"/>
-      <details key="end" value="673"/>
+      <details key="end" value="680"/>
       <details key="line" value="5"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateContainerVueFile/%">
       <details key="start" value="156"/>
-      <details key="end" value="660"/>
+      <details key="end" value="667"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generateContainerVueFile/%/%">
-      <details key="start" value="208"/>
-      <details key="end" value="251"/>
+      <details key="start" value="212"/>
+      <details key="end" value="255"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generateContainerVueFile/%/%.1">
-      <details key="start" value="252"/>
-      <details key="end" value="255"/>
+      <details key="start" value="256"/>
+      <details key="end" value="259"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generateContainerVueFile/%/%.2">
-      <details key="start" value="257"/>
-      <details key="end" value="277"/>
+      <details key="start" value="261"/>
+      <details key="end" value="283"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/generateContainerVueFile/%/%.3">
-      <details key="start" value="278"/>
-      <details key="end" value="281"/>
+      <details key="start" value="284"/>
+      <details key="end" value="287"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/generateContainerVueFile/%/%.4">
-      <details key="start" value="283"/>
-      <details key="end" value="653"/>
+      <details key="start" value="289"/>
+      <details key="end" value="660"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/generateContainerVueFile/%/%.5">
       <details key="start" value="163"/>
-      <details key="end" value="189"/>
+      <details key="end" value="193"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.8" references="/0/generateContainerVueFile/%/%.6">
-      <details key="start" value="198"/>
-      <details key="end" value="205"/>
+      <details key="start" value="202"/>
+      <details key="end" value="209"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/generateContainerVueFile/%.1">
-      <details key="start" value="661"/>
-      <details key="end" value="662"/>
+      <details key="start" value="668"/>
+      <details key="end" value="669"/>
       <details key="line" value="35"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/generateContainerVueFile/container">

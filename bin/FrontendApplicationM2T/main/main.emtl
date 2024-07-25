@@ -20,7 +20,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/rootComponent.emtl#/0/rootComponent"/>
+        <definition href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/routesConfigs.emtl#/0/routesConfigs"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="app" referredVariable="/0/main/app">
           <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
         </argument>
@@ -28,7 +28,7 @@
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-        <definition href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/routesConfigs.emtl#/0/routesConfigs"/>
+        <definition href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/rootComponent.emtl#/0/rootComponent"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="app" referredVariable="/0/main/app">
           <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
         </argument>

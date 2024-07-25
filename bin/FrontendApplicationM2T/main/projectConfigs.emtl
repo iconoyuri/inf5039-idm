@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="projectConfigs" nsURI="FrontendApplicationM2T::main::projectConfigs" startHeaderPosition="30" endHeaderPosition="246">
+  <mtl:Module name="projectConfigs" nsURI="FrontendApplicationM2T::main::projectConfigs" startHeaderPosition="30" endHeaderPosition="443">
     <input>
       <takesTypesFrom href="http://www.frontendapplicationmm.com#/"/>
     </input>
-    <ownedModuleElement xsi:type="mtl:Template" name="generateConfigFiles" visibility="Public" main="true">
+    <ownedModuleElement xsi:type="mtl:Template" name="generateConfigFiles" visibility="Public">
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;!DOCTYPE html>&#xA;&lt;html lang=&quot;en&quot;>&#xA;  &lt;head>&#xA;    &lt;meta charset=&quot;UTF-8&quot;>&#xA;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>&#xA;    &lt;title>"/>
         <body xsi:type="ocl.ecore:PropertyCallExp">
@@ -78,6 +78,16 @@
         </body>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;  resolve: {&#xA;    alias: {&#xA;      '@': fileURLToPath(new URL('./src', import.meta.url))&#xA;    }&#xA;  }&#xA;})&#xA;&#xA;"/>
         <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="vite.config.js">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="// import './assets/main.css'&#xA;&#xA;import { createApp } from 'vue'&#xA;import App from './App.vue'&#xA;import router from './router'&#xA;&#xA;const app = createApp(App)&#xA;&#xA;app.use(router)&#xA;&#xA;app.mount('#app')&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="src/main.js">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </fileUrl>
         <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
@@ -207,200 +217,231 @@
     <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//App_Frontend"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateConfigFiles">
       <details key="start" value="96"/>
-      <details key="end" value="1567"/>
+      <details key="end" value="1783"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateConfigFiles/%">
-      <details key="start" value="249"/>
-      <details key="end" value="595"/>
-      <details key="line" value="9"/>
+      <details key="start" value="232"/>
+      <details key="end" value="578"/>
+      <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generateConfigFiles/%/%">
-      <details key="start" value="287"/>
-      <details key="end" value="442"/>
-      <details key="line" value="10"/>
+      <details key="start" value="270"/>
+      <details key="end" value="425"/>
+      <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generateConfigFiles/%/%.1">
-      <details key="start" value="443"/>
-      <details key="end" value="459"/>
+      <details key="start" value="426"/>
+      <details key="end" value="442"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generateConfigFiles/%/%.1/frontendApp">
-      <details key="start" value="443"/>
-      <details key="end" value="454"/>
+      <details key="start" value="426"/>
+      <details key="end" value="437"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/generateConfigFiles/%/%.2">
-      <details key="start" value="462"/>
-      <details key="end" value="588"/>
-      <details key="line" value="15"/>
+      <details key="start" value="445"/>
+      <details key="end" value="571"/>
+      <details key="line" value="14"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/generateConfigFiles/%/%.3">
-      <details key="start" value="256"/>
-      <details key="end" value="268"/>
+      <details key="start" value="239"/>
+      <details key="end" value="251"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/generateConfigFiles/%/%.4">
-      <details key="start" value="277"/>
-      <details key="end" value="284"/>
+      <details key="start" value="260"/>
+      <details key="end" value="267"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.8" references="/0/generateConfigFiles/%.1">
-      <details key="start" value="596"/>
-      <details key="end" value="598"/>
-      <details key="line" value="23"/>
+      <details key="start" value="579"/>
+      <details key="end" value="581"/>
+      <details key="line" value="22"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/generateConfigFiles/%.2">
-      <details key="start" value="598"/>
-      <details key="end" value="998"/>
-      <details key="line" value="25"/>
+      <details key="start" value="581"/>
+      <details key="end" value="981"/>
+      <details key="line" value="24"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/generateConfigFiles/%.2/%">
-      <details key="start" value="638"/>
-      <details key="end" value="651"/>
-      <details key="line" value="26"/>
+      <details key="start" value="621"/>
+      <details key="end" value="634"/>
+      <details key="line" value="25"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/generateConfigFiles/%.2/%.1">
-      <details key="start" value="652"/>
-      <details key="end" value="668"/>
+      <details key="start" value="635"/>
+      <details key="end" value="651"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/generateConfigFiles/%.2/%.1/frontendApp">
-      <details key="start" value="652"/>
-      <details key="end" value="663"/>
+      <details key="start" value="635"/>
+      <details key="end" value="646"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.13" references="/0/generateConfigFiles/%.2/%.2">
-      <details key="start" value="670"/>
-      <details key="end" value="991"/>
-      <details key="line" value="27"/>
+      <details key="start" value="653"/>
+      <details key="end" value="974"/>
+      <details key="line" value="26"/>
     </eAnnotations>
     <eAnnotations source="positions.14" references="/0/generateConfigFiles/%.2/%.3">
-      <details key="start" value="605"/>
-      <details key="end" value="619"/>
+      <details key="start" value="588"/>
+      <details key="end" value="602"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.15" references="/0/generateConfigFiles/%.2/%.4">
-      <details key="start" value="628"/>
-      <details key="end" value="635"/>
+      <details key="start" value="611"/>
+      <details key="end" value="618"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.16" references="/0/generateConfigFiles/%.3">
-      <details key="start" value="999"/>
-      <details key="end" value="1000"/>
-      <details key="line" value="47"/>
+      <details key="start" value="982"/>
+      <details key="end" value="983"/>
+      <details key="line" value="46"/>
     </eAnnotations>
     <eAnnotations source="positions.17" references="/0/generateConfigFiles/%.4">
-      <details key="start" value="1000"/>
-      <details key="end" value="1184"/>
-      <details key="line" value="48"/>
+      <details key="start" value="983"/>
+      <details key="end" value="1167"/>
+      <details key="line" value="47"/>
     </eAnnotations>
     <eAnnotations source="positions.18" references="/0/generateConfigFiles/%.4/%">
-      <details key="start" value="1041"/>
-      <details key="end" value="1094"/>
-      <details key="line" value="49"/>
+      <details key="start" value="1024"/>
+      <details key="end" value="1077"/>
+      <details key="line" value="48"/>
     </eAnnotations>
     <eAnnotations source="positions.19" references="/0/generateConfigFiles/%.4/%.1">
-      <details key="start" value="1095"/>
-      <details key="end" value="1098"/>
+      <details key="start" value="1078"/>
+      <details key="end" value="1081"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.20" references="/0/generateConfigFiles/%.4/%.2">
-      <details key="start" value="1100"/>
-      <details key="end" value="1109"/>
-      <details key="line" value="52"/>
+      <details key="start" value="1083"/>
+      <details key="end" value="1092"/>
+      <details key="line" value="51"/>
     </eAnnotations>
     <eAnnotations source="positions.21" references="/0/generateConfigFiles/%.4/%.3">
-      <details key="start" value="1110"/>
-      <details key="end" value="1113"/>
+      <details key="start" value="1093"/>
+      <details key="end" value="1096"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.22" references="/0/generateConfigFiles/%.4/%.4">
-      <details key="start" value="1115"/>
-      <details key="end" value="1140"/>
-      <details key="line" value="53"/>
+      <details key="start" value="1098"/>
+      <details key="end" value="1123"/>
+      <details key="line" value="52"/>
     </eAnnotations>
     <eAnnotations source="positions.23" references="/0/generateConfigFiles/%.4/%.5">
-      <details key="start" value="1141"/>
-      <details key="end" value="1144"/>
+      <details key="start" value="1124"/>
+      <details key="end" value="1127"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.24" references="/0/generateConfigFiles/%.4/%.6">
-      <details key="start" value="1146"/>
-      <details key="end" value="1168"/>
-      <details key="line" value="55"/>
+      <details key="start" value="1129"/>
+      <details key="end" value="1151"/>
+      <details key="line" value="54"/>
     </eAnnotations>
     <eAnnotations source="positions.25" references="/0/generateConfigFiles/%.4/%.7">
-      <details key="start" value="1169"/>
-      <details key="end" value="1172"/>
+      <details key="start" value="1152"/>
+      <details key="end" value="1155"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.26" references="/0/generateConfigFiles/%.4/%.8">
-      <details key="start" value="1174"/>
-      <details key="end" value="1177"/>
-      <details key="line" value="56"/>
+      <details key="start" value="1157"/>
+      <details key="end" value="1160"/>
+      <details key="line" value="55"/>
     </eAnnotations>
     <eAnnotations source="positions.27" references="/0/generateConfigFiles/%.4/%.9">
-      <details key="start" value="1007"/>
-      <details key="end" value="1022"/>
+      <details key="start" value="990"/>
+      <details key="end" value="1005"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.28" references="/0/generateConfigFiles/%.4/%.10">
-      <details key="start" value="1031"/>
-      <details key="end" value="1038"/>
+      <details key="start" value="1014"/>
+      <details key="end" value="1021"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.29" references="/0/generateConfigFiles/%.5">
-      <details key="start" value="1185"/>
-      <details key="end" value="1186"/>
-      <details key="line" value="58"/>
+      <details key="start" value="1168"/>
+      <details key="end" value="1169"/>
+      <details key="line" value="57"/>
     </eAnnotations>
     <eAnnotations source="positions.30" references="/0/generateConfigFiles/%.6">
-      <details key="start" value="1186"/>
-      <details key="end" value="1555"/>
-      <details key="line" value="59"/>
+      <details key="start" value="1169"/>
+      <details key="end" value="1538"/>
+      <details key="line" value="58"/>
     </eAnnotations>
     <eAnnotations source="positions.31" references="/0/generateConfigFiles/%.6/%">
-      <details key="start" value="1228"/>
-      <details key="end" value="1420"/>
-      <details key="line" value="60"/>
+      <details key="start" value="1211"/>
+      <details key="end" value="1403"/>
+      <details key="line" value="59"/>
     </eAnnotations>
     <eAnnotations source="positions.32" references="/0/generateConfigFiles/%.6/%.1">
-      <details key="start" value="1421"/>
-      <details key="end" value="1424"/>
+      <details key="start" value="1404"/>
+      <details key="end" value="1407"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.33" references="/0/generateConfigFiles/%.6/%.2">
-      <details key="start" value="1426"/>
-      <details key="end" value="1440"/>
-      <details key="line" value="68"/>
+      <details key="start" value="1409"/>
+      <details key="end" value="1423"/>
+      <details key="line" value="67"/>
     </eAnnotations>
     <eAnnotations source="positions.34" references="/0/generateConfigFiles/%.6/%.3">
-      <details key="start" value="1441"/>
-      <details key="end" value="1444"/>
+      <details key="start" value="1424"/>
+      <details key="end" value="1427"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.35" references="/0/generateConfigFiles/%.6/%.4">
-      <details key="start" value="1446"/>
-      <details key="end" value="1548"/>
-      <details key="line" value="69"/>
+      <details key="start" value="1429"/>
+      <details key="end" value="1531"/>
+      <details key="line" value="68"/>
     </eAnnotations>
     <eAnnotations source="positions.36" references="/0/generateConfigFiles/%.6/%.5">
-      <details key="start" value="1193"/>
-      <details key="end" value="1209"/>
+      <details key="start" value="1176"/>
+      <details key="end" value="1192"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.37" references="/0/generateConfigFiles/%.6/%.6">
-      <details key="start" value="1218"/>
-      <details key="end" value="1225"/>
+      <details key="start" value="1201"/>
+      <details key="end" value="1208"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.38" references="/0/generateConfigFiles/frontendApp">
+    <eAnnotations source="positions.38" references="/0/generateConfigFiles/%.7">
+      <details key="start" value="1539"/>
+      <details key="end" value="1540"/>
+      <details key="line" value="77"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/generateConfigFiles/%.8">
+      <details key="start" value="1540"/>
+      <details key="end" value="1771"/>
+      <details key="line" value="78"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/generateConfigFiles/%.8/%">
+      <details key="start" value="1579"/>
+      <details key="end" value="1764"/>
+      <details key="line" value="79"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/generateConfigFiles/%.8/%.1">
+      <details key="start" value="1547"/>
+      <details key="end" value="1560"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/generateConfigFiles/%.8/%.2">
+      <details key="start" value="1569"/>
+      <details key="end" value="1576"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/generateConfigFiles/frontendApp">
       <details key="start" value="133"/>
       <details key="end" value="159"/>
       <details key="line" value="6"/>

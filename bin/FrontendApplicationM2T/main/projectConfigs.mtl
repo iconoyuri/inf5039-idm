@@ -5,7 +5,6 @@
 
 [template public generateConfigFiles(frontendApp : App_Frontend)]
 [comment][template public main(frontendApp : App_Frontend)][/comment]
-[comment @main/]
 [file ('index.html', false, 'UTF-8')]
 <!DOCTYPE html>
 <html lang="en">
@@ -74,5 +73,19 @@ export default defineConfig({
   }
 })
 
+[/file]
+
+[file ('src/main.js', false, 'UTF-8')]
+// import './assets/main.css'
+
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+
+const app = createApp(App)
+
+app.use(router)
+
+app.mount('#app')
 [/file]
 [/template]

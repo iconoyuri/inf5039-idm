@@ -1,0 +1,25 @@
+[comment encoding = UTF-8 /]
+[module text('http://www.frontendapplicationmm.com')]
+
+
+
+[template public generateTextVueFile(text : Text)]
+[file ('src/components/Text.vue', false, 'UTF-8')]
+
+<script setup>
+	const props = defineProps(['['/]'value','fontSize'[']'/])
+	const fontSize = props.fontSize + 'px'
+</script>
+
+<template>
+    <p>{{ value }}</p>
+</template>
+
+<style scoped>
+p{
+	font-size: v-bind(fontSize);
+}
+</style>
+[/file]
+
+[/template]

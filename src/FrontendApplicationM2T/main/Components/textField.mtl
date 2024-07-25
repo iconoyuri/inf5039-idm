@@ -1,0 +1,23 @@
+[comment encoding = UTF-8 /]
+[module textField('http://www.frontendapplicationmm.com')]
+
+
+[template public generateTextFieldVueFile(textfield : TextField)]
+[file ('src/components/TextField.vue', false, 'UTF-8')]
+
+<script setup>
+	const props = defineProps(['['/]'label', 'value'[']'/])
+</script>
+
+<template>
+  <label> {{ label }}
+  	<input type="textfield" :placeholder="value" />
+  </label>
+</template>
+
+<style scoped>
+
+</style>
+[/file]
+
+[/template]

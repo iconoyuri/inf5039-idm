@@ -37,6 +37,18 @@
         <events
             name="navigateToRegister"/>
       </components>
+      <components
+          xsi:type="frontendapplicationmm:Link"
+          name="Return home"
+          href="/"
+          text="Return home"/>
+      <containers>
+        <components
+            xsi:type="frontendapplicationmm:TextField"
+            name="Suggestions"
+            value="Suggestions"
+            label="Suggestions"/>
+      </containers>
     </containers>
     <styles
         className="homeContainerStyle"

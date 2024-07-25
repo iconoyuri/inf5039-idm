@@ -3,16 +3,16 @@
 
 
 [template public generateContainerVueFile(container : Container)]
-[file ('components/Container.vue', false, 'UTF-8')]
+[file ('src/components/Container.vue', false, 'UTF-8')]
 
 <script setup>
-	const props = defineProps(['['/]'spacing', alignment[']'/])
+	const props = defineProps(['['/]'spacing', 'alignment'[']'/])
 	const spacing = props.spacing + 'px';
 </script>
 
 <template>
 	<div :class="{
-			horizontal : alignment == 'horizontal'
+			horizontal : alignment == 'horizontal',
 			vertical : alignment == 'vertical'
 			}">
 		<slot></slot>

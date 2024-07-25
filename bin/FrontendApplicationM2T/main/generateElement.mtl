@@ -1,9 +1,16 @@
 [comment encoding = UTF-8 /]
 [module generateElement('http://www.frontendapplicationmm.com')]
 
-
+[import FrontendApplicationM2T::main::Components::button/]
+[import FrontendApplicationM2T::main::Components::container/]
+[import FrontendApplicationM2T::main::Components::image/]
+[import FrontendApplicationM2T::main::Components::inputField/]
+[import FrontendApplicationM2T::main::Components::link/]
+[import FrontendApplicationM2T::main::Components::text/]
+[import FrontendApplicationM2T::main::Components::textField/]
 
 [template public generateElement(container : Container)]
+[container.generateContainerVueFile()/]
 <Container spacing='[container.spacing /]' alignment='[container.alignment /]'>
 [for (subContainer : Container | container.containers)]
 	[generateElement(subContainer)/]
@@ -19,26 +26,43 @@
 [comment][template public generateElement(image : Image)][/comment]
 [/template]
 
+[template public generateElement(form : Form)]
+	<Form>
+		[for (subContainer : Container | form.containers)]
+			[generateElement(subContainer)/]
+		[/for]
+		[for (subComponent : Component | form.components)]
+			[generateElement(subComponent)/]
+		[/for]
+	</Form>
+[/template]
+
 [template public generateElement(image : Image)]
+	[image.generateImageVueFile()/]
 	<Image source="[image.source/]" />
 [/template]
 
 [template public generateElement(text : Text)]
+	[text.generateTextVueFile()/]
 	<Text value="[text.value/]" fontSize="[text.fontSize/]" />
 [/template]
 
 [template public generateElement(textField : TextField)]
+	[textField.generateTextFieldVueFile()/]
 	<TextField value="[textField.value/]" label="[textField.label/]" maxLines="[textField.maxLines/]" indication="[textField.indication/]" />
 [/template]
 
 [template public generateElement(inputfield : InputField)]
+	[inputfield.generateInputFieldVueFile()/]
 	<InputField value="[inputfield.value/]" label="[inputfield.label/]" type="[inputfield.type/]" indication="[inputfield.indication/]" />
 [/template]
 
 [template public generateElement(button : Button)]
-	<Button text="[button.text/]"/>
+	[button.generateButtonVueFile()/]
+	<Button text="[button.text/]" />
 [/template]
 
 [template public generateElement(link : Link)]
-	<Link text="[link.text/]" href="[link.href/]"/>
+	[link.generateLinkVueFile()/]
+	<Link text="[link.text/]" href="[link.href/]" />
 [/template]

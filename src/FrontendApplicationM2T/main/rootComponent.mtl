@@ -3,9 +3,11 @@
 
 [import FrontendApplicationM2T::main::Components::page/]
 
+
 [template public rootComponent(app : App_Frontend)]
-[comment @main/]
-[file ('App.vue', false, 'UTF-8')]
+
+
+[file ('src/App.vue', false, 'UTF-8')]
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
@@ -28,6 +30,13 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <RouterView />
 </template>
+
+<style scoped>
+ul {
+	list-style-type: none;
+	display: flex;
+}
+</style>
 
 
 [/file]

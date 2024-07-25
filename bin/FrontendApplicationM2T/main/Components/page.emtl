@@ -4,15 +4,15 @@
     <input>
       <takesTypesFrom href="http://www.frontendapplicationmm.com#/"/>
     </input>
-    <imports href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/generateElement.emtl#/0"/>
+    <imports href="../generateElement.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="generatePage" visibility="Public">
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;script setup>&#xA;import Container from '../components/Container.vue'&#xA;import Image from '../components/Image.vue'&#xA;import Text from '../components/Text.vue'&#xA;import TextField from '../components/TextField.vue'&#xA;import InputField from '../components/InputField.vue'&#xA;import Button from '../components/Button.vue'&#xA;import Link from '../components/Link.vue'&#xA;&lt;/script>&#xA;&#xA;&lt;template>&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;script setup>&#xA;&#x9;import Container from '../components/Container.vue'&#xA;&#x9;import Image from '../components/Image.vue'&#xA;&#x9;import Text from '../components/Text.vue'&#xA;&#x9;import TextField from '../components/TextField.vue'&#xA;&#x9;import InputField from '../components/InputField.vue'&#xA;&#x9;import Button from '../components/Button.vue'&#xA;&#x9;import Link from '../components/Link.vue'&#xA;&lt;/script>&#xA;&#xA;&lt;template>&#xA;"/>
         <body xsi:type="mtl:ForBlock">
           <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
           <body xsi:type="mtl:TemplateInvocation">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-            <definition href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/generateElement.emtl#/0/generateElement.1"/>
+            <definition href="../generateElement.emtl#/0/generateElement.1"/>
             <argument xsi:type="ocl.ecore:VariableExp" name="component" referredVariable="/0/generatePage/%/%.1/component">
               <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Component"/>
             </argument>
@@ -32,7 +32,7 @@
           <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
           <body xsi:type="mtl:TemplateInvocation">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-            <definition href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/generateElement.emtl#/0/generateElement"/>
+            <definition href="../generateElement.emtl#/0/generateElement"/>
             <argument xsi:type="ocl.ecore:VariableExp" name="container" referredVariable="/0/generatePage/%/%.2/container">
               <eType xsi:type="ecore:EClass" href="http://www.frontendapplicationmm.com#//Container"/>
             </argument>
@@ -114,7 +114,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/generateElement.emtl#/0/generateElement"/>
+          <references href="../generateElement.emtl#/0/generateElement"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="container">
@@ -126,7 +126,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="platform:/resource/FrontendApplicationM2T/bin/FrontendApplicationM2T/main/generateElement.emtl#/0/generateElement.1"/>
+          <references href="../generateElement.emtl#/0/generateElement.1"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="component">
@@ -167,6 +167,11 @@
     <eClassifiers xsi:type="ecore:EClass" name="frontendapplicationmm_Component_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
         <references href="http://www.frontendapplicationmm.com#//Component"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="frontendapplicationmm_Form_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.frontendapplicationmm.com#//Form"/>
       </eAnnotations>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="frontendapplicationmm_Image_Class">
@@ -262,102 +267,102 @@
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generatePage">
       <details key="start" value="141"/>
-      <details key="end" value="836"/>
+      <details key="end" value="843"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generatePage/%">
       <details key="start" value="185"/>
-      <details key="end" value="824"/>
+      <details key="end" value="831"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/generatePage/%/%">
       <details key="start" value="256"/>
-      <details key="end" value="625"/>
+      <details key="end" value="632"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/generatePage/%/%.1">
-      <details key="start" value="626"/>
-      <details key="end" value="714"/>
+      <details key="start" value="633"/>
+      <details key="end" value="721"/>
       <details key="line" value="19"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/generatePage/%/%.1/%">
-      <details key="start" value="674"/>
-      <details key="end" value="676"/>
+      <details key="start" value="681"/>
+      <details key="end" value="683"/>
       <details key="line" value="20"/>
     </eAnnotations>
     <eAnnotations source="positions.5" references="/0/generatePage/%/%.1/%.1">
-      <details key="start" value="677"/>
-      <details key="end" value="703"/>
+      <details key="start" value="684"/>
+      <details key="end" value="710"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.6" references="/0/generatePage/%/%.1/%.1/component">
-      <details key="start" value="693"/>
-      <details key="end" value="702"/>
+      <details key="start" value="700"/>
+      <details key="end" value="709"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.7" references="/0/generatePage/%/%.1/%.2">
-      <details key="start" value="706"/>
-      <details key="end" value="707"/>
+      <details key="start" value="713"/>
+      <details key="end" value="714"/>
       <details key="line" value="21"/>
     </eAnnotations>
     <eAnnotations source="positions.8" references="/0/generatePage/%/%.1/component">
-      <details key="start" value="632"/>
-      <details key="end" value="653"/>
+      <details key="start" value="639"/>
+      <details key="end" value="660"/>
       <details key="line" value="19"/>
     </eAnnotations>
     <eAnnotations source="positions.9" references="/0/generatePage/%/%.1/%.3">
-      <details key="start" value="656"/>
-      <details key="end" value="671"/>
+      <details key="start" value="663"/>
+      <details key="end" value="678"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/generatePage/%/%.1/%.3/page">
-      <details key="start" value="656"/>
-      <details key="end" value="660"/>
+      <details key="start" value="663"/>
+      <details key="end" value="667"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/generatePage/%/%.2">
-      <details key="start" value="716"/>
-      <details key="end" value="804"/>
+      <details key="start" value="723"/>
+      <details key="end" value="811"/>
       <details key="line" value="22"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/generatePage/%/%.2/%">
-      <details key="start" value="764"/>
-      <details key="end" value="766"/>
+      <details key="start" value="771"/>
+      <details key="end" value="773"/>
       <details key="line" value="23"/>
     </eAnnotations>
     <eAnnotations source="positions.13" references="/0/generatePage/%/%.2/%.1">
-      <details key="start" value="767"/>
-      <details key="end" value="793"/>
+      <details key="start" value="774"/>
+      <details key="end" value="800"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.14" references="/0/generatePage/%/%.2/%.1/container">
-      <details key="start" value="783"/>
-      <details key="end" value="792"/>
+      <details key="start" value="790"/>
+      <details key="end" value="799"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.15" references="/0/generatePage/%/%.2/%.2">
-      <details key="start" value="796"/>
-      <details key="end" value="797"/>
+      <details key="start" value="803"/>
+      <details key="end" value="804"/>
       <details key="line" value="24"/>
     </eAnnotations>
     <eAnnotations source="positions.16" references="/0/generatePage/%/%.2/container">
-      <details key="start" value="722"/>
-      <details key="end" value="743"/>
+      <details key="start" value="729"/>
+      <details key="end" value="750"/>
       <details key="line" value="22"/>
     </eAnnotations>
     <eAnnotations source="positions.17" references="/0/generatePage/%/%.2/%.3">
-      <details key="start" value="746"/>
-      <details key="end" value="761"/>
+      <details key="start" value="753"/>
+      <details key="end" value="768"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.18" references="/0/generatePage/%/%.2/%.3/page">
-      <details key="start" value="746"/>
-      <details key="end" value="750"/>
+      <details key="start" value="753"/>
+      <details key="end" value="757"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.19" references="/0/generatePage/%/%.3">
-      <details key="start" value="805"/>
-      <details key="end" value="817"/>
+      <details key="start" value="812"/>
+      <details key="end" value="824"/>
       <details key="line" value="25"/>
     </eAnnotations>
     <eAnnotations source="positions.20" references="/0/generatePage/%/%.4">
